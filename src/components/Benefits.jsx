@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Benefits() {
+function Benefits({ isLoaded }) {
   const benefits = [
     {
       icon: 'fa-mobile-alt',
@@ -15,49 +15,70 @@ function Benefits() {
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center mb-6">
+            <div 
+              style={{animationDelay: isLoaded ? '1.2s' : '0s'}} 
+              className={`w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center mb-6 ${isLoaded ? 'animate-fly-in-left' : ''}`}
+            >
               <i className="fas fa-mobile-alt text-white text-2xl"></i>
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6" style={{fontFamily: "'EB Garamond', 'EB Garamond Fallback', serif"}}>
-              Simple, Clean, and
+            <h2 
+              style={{fontFamily: "'EB Garamond', 'EB Garamond Fallback', serif", animationDelay: isLoaded ? '1.3s' : '0s'}} 
+              className={`text-4xl md:text-5xl font-bold text-white mb-6 ${isLoaded ? 'animate-fly-in-left' : ''}`}
+            >
+              Effortless Intelligence,
               <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                {' '}Built for Speed
+                {' '}Zero Friction
               </span>
             </h2>
-            <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-              Made for everyday use, Omni gives you the answer you need in seconds, with a frictionless interface built for iOS.
+            <p 
+              style={{animationDelay: isLoaded ? '1.4s' : '0s'}} 
+              className={`text-xl text-gray-300 mb-8 leading-relaxed ${isLoaded ? 'animate-fly-in-left' : ''}`}
+            >
+              Built for iOS with Live Activities integration. Omni surfaces the right card at the right moment—no app opening, no manual checking. Pure automation.
             </p>
             <div className="space-y-4">
-              <div className="flex items-start gap-4">
+              <div 
+                style={{animationDelay: isLoaded ? '1.5s' : '0s'}} 
+                className={`flex items-start gap-4 ${isLoaded ? 'animate-fly-in-left' : ''}`}
+              >
                 <div className="w-8 h-8 bg-green-500/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                   <i className="fas fa-check text-green-400 text-sm"></i>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-white mb-1">Instant Recommendations</h4>
-                  <p className="text-gray-300">Get card suggestions in seconds, not minutes</p>
+                  <h4 className="font-semibold text-white mb-1">Live Activities Integration</h4>
+                  <p className="text-gray-300">Card recommendations appear automatically based on your location</p>
                 </div>
               </div>
-              <div className="flex items-start gap-4">
+              <div 
+                style={{animationDelay: isLoaded ? '1.6s' : '0s'}} 
+                className={`flex items-start gap-4 ${isLoaded ? 'animate-fly-in-left' : ''}`}
+              >
                 <div className="w-8 h-8 bg-green-500/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                   <i className="fas fa-check text-green-400 text-sm"></i>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-white mb-1">Zero Effort Required</h4>
-                  <p className="text-gray-300">Omni works automatically in the background</p>
+                  <h4 className="font-semibold text-white mb-1">Complete Financial Overview</h4>
+                  <p className="text-gray-300">Track spending, payments, and rewards all in one place</p>
                 </div>
               </div>
-              <div className="flex items-start gap-4">
+              <div 
+                style={{animationDelay: isLoaded ? '1.7s' : '0s'}} 
+                className={`flex items-start gap-4 ${isLoaded ? 'animate-fly-in-left' : ''}`}
+              >
                 <div className="w-8 h-8 bg-green-500/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                   <i className="fas fa-check text-green-400 text-sm"></i>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-white mb-1">Beautiful iOS Design</h4>
-                  <p className="text-gray-300">Intuitive interface that feels natural</p>
+                  <h4 className="font-semibold text-white mb-1">Premium iOS Experience</h4>
+                  <p className="text-gray-300">Native design that feels built-in, not bolted-on</p>
                 </div>
               </div>
             </div>
           </div>
-          <div className="relative">
+          <div 
+            style={{animationDelay: isLoaded ? '1.4s' : '0s'}} 
+            className={`relative ${isLoaded ? 'animate-fly-in-right' : ''}`}
+          >
             <div className="bg-gray-700 rounded-3xl shadow-2xl p-8 border border-gray-600">
               <div className="aspect-[9/16] rounded-2xl overflow-hidden">
                 <img 
