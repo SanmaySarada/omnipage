@@ -9,7 +9,7 @@ import Footer from '../components/Footer'
 
 function Home() {
   return (
-    <div className="flex min-h-svh flex-col bg-gray-900">
+    <div className="flex min-h-svh flex-col cohesive-gradient">
       <div className="grow">
         <main className="relative overflow-hidden md:overflow-visible">
           <Navbar />

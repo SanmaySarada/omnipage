@@ -44,3 +44,17 @@ html {
   border-radius: inherit;
 }
 
+/* Cohesive Landing Page Gradient */
+.cohesive-gradient {
+  background: linear-gradient(
+    to bottom,
+    #111827 0%,
+    #15192d 20%,
+    #1a1f3a 40%,
+    #1e1b4b 60%,
+    #1a1f3a 80%,
+    #15192d 100%
+  );
+  min-height: 100vh;
+}
+

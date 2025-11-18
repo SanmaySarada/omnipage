@@ -4,7 +4,7 @@ function Hero() {
   return (
     <div className="hero-v2 flex flex-col items-center gap-8 lg:gap-16">
       <div className="relative w-full">
-        <section className="flex h-full items-start justify-center pt-20 lg:pt-20 bg-gradient-to-b from-gray-900 via-purple-900 to-gray-900">
+        <section className="flex h-full items-start justify-center pt-20 lg:pt-20 bg-transparent">
           <div className="flex flex-col items-center gap-8 py-20">
             <div className="flex flex-col items-center gap-4">
               <div className="flex flex-col items-center gap-4 lg:gap-3">
