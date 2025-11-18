@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Testimonials() {
+function Testimonials({ isLoaded }) {
   const testimonials = [
     {
       name: 'Sarah Chen',
@@ -29,13 +29,19 @@ function Testimonials() {
     <section id="testimonials" className="py-20 px-4 sm:px-6 lg:px-8 bg-transparent">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4" style={{fontFamily: "'EB Garamond', 'EB Garamond Fallback', serif"}}>
+          <h2 
+            style={{fontFamily: "'EB Garamond', 'EB Garamond Fallback', serif", animationDelay: isLoaded ? '1.8s' : '0s'}} 
+            className={`text-4xl md:text-5xl font-bold text-white mb-4 ${isLoaded ? 'animate-fly-in-bottom' : ''}`}
+          >
             Loved by
             <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
               {' '}Thousands
             </span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+          <p 
+            style={{animationDelay: isLoaded ? '1.9s' : '0s'}} 
+            className={`text-xl text-gray-300 max-w-2xl mx-auto ${isLoaded ? 'animate-fly-in-bottom' : ''}`}
+          >
             See what our users are saying about their experience with Omni
           </p>
         </div>
@@ -43,7 +49,8 @@ function Testimonials() {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-gray-800 rounded-2xl p-8 border border-gray-700 shadow-sm hover:shadow-xl hover:border-purple-500 transition-all duration-300"
+              style={{animationDelay: isLoaded ? `${2.0 + index * 0.1}s` : '0s'}}
+              className={`bg-gray-800 rounded-2xl p-8 border border-gray-700 shadow-sm hover:shadow-xl hover:border-purple-500 transition-all duration-300 ${isLoaded ? 'animate-fly-in-bottom' : ''}`}
             >
               <div className="flex items-center gap-1 mb-4">
                 {[...Array(testimonial.rating)].map((_, i) => (

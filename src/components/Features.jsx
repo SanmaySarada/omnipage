@@ -1,29 +1,29 @@
 import React, { useState, useEffect, useRef } from 'react'
 
-function Features() {
+function Features({ isLoaded }) {
   const features = [
     {
-      icon: 'fa-bolt',
-      title: 'Real-Time Card Recommendations',
-      description: 'Omni shows you the best card to use at any merchant based on rewards rates, categories, and point valuations—so you never leave value on the table.',
+      icon: 'fa-map-marker-alt',
+      title: 'Location-Based Card Selection',
+      description: 'Uses your real-time location via Apple\'s Live Activities to instantly show the best credit card at any merchant. No guessing, no manual checking—just the optimal choice, automatically.',
       gradient: 'from-yellow-400 to-orange-500'
     },
     {
-      icon: 'fa-chart-line',
-      title: 'Automatic Savings Tracking',
-      description: 'See exactly how much extra you\'re earning with Omni. Track bonus rewards, monthly savings, and total points generated across all your cards.',
+      icon: 'fa-gift',
+      title: 'Bonus Offer Optimization',
+      description: 'Aggregates all limited-time card offers and automatically tells you which ones to activate and how much you\'ll earn. Never miss a bonus opportunity again.',
       gradient: 'from-green-400 to-emerald-500'
     },
     {
-      icon: 'fa-brain',
-      title: 'Personalized Reward Insights',
-      description: 'Omni learns your cards, your spending habits, and your favorite merchants to deliver tailored advice that maximizes your earning potential.',
+      icon: 'fa-chart-line',
+      title: 'Payment Tracking Dashboard',
+      description: 'A complete financial overview that tracks spending, payments, upcoming bills, and total rewards earned across all cards. Think Rocket Money, but for credit card optimization.',
       gradient: 'from-purple-400 to-pink-500'
     },
     {
-      icon: 'fa-store',
-      title: 'Merchant-Level Optimization',
-      description: 'From big retailers to local shops, Omni identifies merchant category codes (MCCs) and applies the correct rewards for each of your cards—instantly.',
+      icon: 'fa-lightbulb',
+      title: 'Card Recommendations Engine',
+      description: 'Analyzes your historical transactions and spending patterns to recommend the best new cards to apply for, based on actual reward potential—not generic suggestions.',
       gradient: 'from-blue-400 to-cyan-500'
     }
   ]
@@ -64,14 +64,20 @@ function Features() {
     <section id="features" className="py-20 px-4 sm:px-6 lg:px-8 bg-transparent">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4" style={{fontFamily: "'EB Garamond', 'EB Garamond Fallback', serif"}}>
-            Everything You Need to
+          <h2 
+            style={{fontFamily: "'EB Garamond', 'EB Garamond Fallback', serif", animationDelay: isLoaded ? '0.8s' : '0s'}} 
+            className={`text-4xl md:text-5xl font-bold text-white mb-4 ${isLoaded ? 'animate-fly-in-bottom' : ''}`}
+          >
+            Intelligence That Works
             <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-              {' '}Maximize Rewards
+              {' '}Behind the Scenes
             </span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Powerful features designed to help you earn more from every purchase
+          <p 
+            style={{animationDelay: isLoaded ? '0.9s' : '0s'}} 
+            className={`text-xl text-gray-300 max-w-2xl mx-auto ${isLoaded ? 'animate-fly-in-bottom' : ''}`}
+          >
+            Four core features that automate every aspect of credit card optimization
           </p>
         </div>
         <div className="grid md:grid-cols-2 gap-8">
