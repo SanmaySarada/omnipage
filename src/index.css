@@ -14,14 +14,23 @@ body {
 
 html {
   scroll-behavior: smooth;
+  overscroll-behavior: None;
 }
 
 /* Purple Gradient Button Styles */
 .purple-gradient-button {
-  background: linear-gradient(135deg, #8B5CF6 0%, #6366F1 50%, #8B5CF6 100%);
-  background-size: 200% 200%;
+  background: linear-gradient(135deg, #8b5cf6 0%, #6366f1 50%, #8b5cf6 100%);
+  background-size: 250% 250%;
   position: relative;
   overflow: hidden;
+  box-shadow: 0 15px 40px rgba(99, 102, 241, 0.35);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  animation: gradientDrift 6s ease-in-out infinite;
+}
+
+.purple-gradient-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 55px rgba(139, 92, 246, 0.45);
 }
 
 .purple-gradient-button::before {
@@ -39,23 +48,96 @@ html {
   left: 100%;
 }
 
+.purple-gradient-button::after {
+  content: '';
+  position: absolute;
+  inset: -3px;
+  border-radius: inherit;
+  background: radial-gradient(circle, rgba(236, 233, 255, 0.55) 0%, rgba(147, 112, 255, 0.15) 45%, transparent 70%);
+  opacity: 0.7;
+  filter: blur(6px);
+  animation: glowPulse 2.4s ease-out infinite;
+  pointer-events: none;
+}
+
 .blurred-border {
   background: linear-gradient(135deg, rgba(139, 92, 246, 0.6), rgba(99, 102, 241, 0.6));
   border-radius: inherit;
 }
 
-/* Cohesive Landing Page Gradient */
+@keyframes gradientDrift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes glowPulse {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.4;
+  }
+  60% {
+    transform: scale(1.08);
+    opacity: 0.85;
+  }
+  100% {
+    transform: scale(1.25);
+    opacity: 0;
+  }
+}
+
+/* Cohesive Landing Page Gradient with Background Image */
 .cohesive-gradient {
+  position: relative;
+  min-height: 100vh;
+}
+
+.cohesive-gradient::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('/15225.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  filter: blur(8px);
+  z-index: -2;
+  opacity: 0.7;
+}
+
+.cohesive-gradient::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background: linear-gradient(
     to bottom,
-    #111827 0%,
-    #15192d 20%,
-    #1a1f3a 40%,
-    #1e1b4b 60%,
-    #1a1f3a 80%,
-    #15192d 100%
+    rgba(17, 24, 39, 0.6) 0%,
+    rgba(17, 24, 39, 0.75) 50%,
+    rgba(17, 24, 39, 0.9) 100%
   );
-  min-height: 100vh;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Enhanced text contrast */
+h1, h2, h3, h4, h5, h6 {
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5), 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+p, span, label, div {
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
 }
 
 /* Fade In Animation Styles - Industry Standard */
@@ -80,8 +162,122 @@ html {
   animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
-/* EB Garamond Font for h1 and h2 only */
-h1, h2 {
+/* EB Garamond Font for h1 only */
+h1 {
   font-family: 'EB Garamond', 'EB Garamond Fallback', serif;
+}
+
+/* Page Load Animations */
+@keyframes flyInFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes flyInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes flyInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Initial page load - hide content for 0-1 second */
+.page-load-animate {
+  opacity: 0;
+}
+
+.page-load-animate.animate-in {
+  opacity: 1;
+}
+
+/* Animated text elements */
+.animate-fly-in-bottom {
+  opacity: 0;
+  animation: flyInFromBottom 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-fly-in-left {
+  opacity: 0;
+  animation: flyInFromLeft 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-fly-in-right {
+  opacity: 0;
+  animation: flyInFromRight 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-fade-in {
+  opacity: 0;
+  animation: fadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Scrolling Card Band */
+.card-scroll-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 5%,
+    black 95%,
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 5%,
+    black 95%,
+    transparent 100%
+  );
+}
+
+.card-scroll-track {
+  display: flex;
+  gap: 1rem;
+  animation: scrollCards 30s linear infinite;
+  will-change: transform;
+}
+
+.card-scroll-item {
+  flex-shrink: 0;
+}
+
+@keyframes scrollCards {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
