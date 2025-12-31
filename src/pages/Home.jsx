@@ -4,6 +4,7 @@ import Hero from '../components/Hero'
 import Features from '../components/Features'
 // import Testimonials from '../components/Testimonials'
 import CTA from '../components/CTA'
+import Footer from '../components/Footer'
 
 function Home() {
   const [isLoaded, setIsLoaded] = useState(false)
@@ -26,6 +27,7 @@ function Home() {
           <Features isLoaded={isLoaded} />
           {/* <Testimonials isLoaded={isLoaded} /> */}
           <CTA isLoaded={isLoaded} />
+          <Footer />
         </main>
       </div>
     </div>
