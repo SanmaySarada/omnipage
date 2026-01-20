@@ -1,35 +1,28 @@
-import React, { useState, useEffect } from 'react'
-import Navbar from '../components/Navbar'
-import Hero from '../components/Hero'
-import Features from '../components/Features'
-// import Testimonials from '../components/Testimonials'
-import CTA from '../components/CTA'
-import Footer from '../components/Footer'
+import React from 'react'
+import TuitionNavbar from '../components/TuitionNavbar'
+import TuitionHero from '../components/TuitionHero'
+import TuitionProcess from '../components/TuitionProcess'
+import TuitionBenefits from '../components/TuitionBenefits'
+import TuitionWaitlist from '../components/TuitionWaitlist'
+import TuitionSecurity from '../components/TuitionSecurity'
+import TuitionFAQ from '../components/TuitionFAQ'
+import TuitionFooter from '../components/TuitionFooter'
 
 function Home() {
-  const [isLoaded, setIsLoaded] = useState(false)
-
-  useEffect(() => {
-    // Initial delay of 0-1 second before animations start
-    const timer = setTimeout(() => {
-      setIsLoaded(true)
-    }, 300) // 300ms delay
-
-    return () => clearTimeout(timer)
-  }, [])
-
   return (
-    <div className={`flex min-h-svh flex-col cohesive-gradient ${isLoaded ? 'animate-in' : 'page-load-animate'}`}>
+    <div className="flex min-h-svh flex-col cohesive-gradient">
       <div className="grow">
-        <main className="relative overflow-hidden md:overflow-visible">
-          <Navbar isLoaded={isLoaded} />
-          <Hero isLoaded={isLoaded} />
-          <Features isLoaded={isLoaded} />
-          {/* <Testimonials isLoaded={isLoaded} /> */}
-          <CTA isLoaded={isLoaded} />
-          <Footer />
+        <main className="relative">
+          <TuitionNavbar />
+          <TuitionHero />
+          <TuitionProcess />
+          <TuitionBenefits />
+          <TuitionWaitlist />
+          <TuitionSecurity />
+          <TuitionFAQ />
         </main>
       </div>
+      <TuitionFooter />
     </div>
   )
 }

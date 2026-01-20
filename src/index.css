@@ -17,6 +17,10 @@ html {
   overscroll-behavior: None;
 }
 
+body {
+  scroll-snap-type: y proximity;
+}
+
 /* Purple Gradient Button Styles */
 .purple-gradient-button {
   background: linear-gradient(135deg, #8b5cf6 0%, #6366f1 50%, #8b5cf6 100%);
@@ -111,7 +115,7 @@ html {
   background-attachment: fixed;
   filter: blur(8px);
   z-index: -2;
-  opacity: 0.7;
+  opacity: 0.5;
 }
 
 .cohesive-gradient::after {
@@ -123,9 +127,9 @@ html {
   bottom: 0;
   background: linear-gradient(
     to bottom,
-    rgba(17, 24, 39, 0.6) 0%,
-    rgba(17, 24, 39, 0.75) 50%,
-    rgba(17, 24, 39, 0.9) 100%
+    rgba(15, 5, 24, 0.3) 0%,
+    rgba(15, 5, 24, 0.5) 50%,
+    rgba(15, 5, 24, 0.7) 100%
   );
   z-index: -1;
   pointer-events: none;
@@ -279,4 +283,49 @@ h1 {
   100% {
     transform: translateX(-50%);
   }
+}
+
+/* Omni Tuition Styles */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-highlight {
+  background: linear-gradient(180deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.01) 100%);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.glow-spot {
+  background: radial-gradient(circle, rgba(124, 58, 237, 0.25) 0%, transparent 70%);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+/* 3D Transform Utilities for Card */
+.perspective-3d {
+  perspective: 2000px;
+}
+
+.rotate-3d-initial {
+  transform: rotateY(-10deg) rotateX(5deg);
+}
+
+.rotate-3d-hover {
+  transform: rotateY(0deg) rotateX(0deg);
+}
+
+/* Light Scroll Snap */
+.scroll-snap-section {
+  scroll-snap-align: start;
+  scroll-snap-stop: normal;
+  scroll-margin-top: 80px; /* Account for fixed navbar */
+}
+
+.scroll-snap-section:last-of-type {
+  scroll-snap-align: end;
 }
