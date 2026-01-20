@@ -30,14 +30,21 @@ function TuitionNavbar() {
           </a>
         </div>
         <div className="hidden lg:flex items-center gap-10">
-          <a className="text-sm font-medium text-slate-400 hover:text-white transition-colors tracking-wide" href="#how-it-works">Process</a>
-          <a className="text-sm font-medium text-slate-400 hover:text-white transition-colors tracking-wide" href="#benefits">Benefits</a>
-          <a className="text-sm font-medium text-slate-400 hover:text-white transition-colors tracking-wide" href="#security">Security</a>
+          <a className="text-sm font-medium text-slate-300 hover:text-white transition-colors tracking-wide" href="#how-it-works">Process</a>
+          <a className="text-sm font-medium text-slate-300 hover:text-white transition-colors tracking-wide" href="#benefits">Benefits</a>
+          <a className="text-sm font-medium text-slate-300 hover:text-white transition-colors tracking-wide" href="#security">Security</a>
         </div>
         <div className="flex items-center gap-4">
           <a 
-            href="#waitlist" 
-            className="bg-white text-deep-purple px-5 py-2 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-slate-200 transition-all inline-block"
+            href="#waitlist"
+            onClick={(e) => {
+              e.preventDefault()
+              const element = document.getElementById('waitlist')
+              if (element) {
+                element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+              }
+            }}
+            className="bg-white text-deep-purple px-5 py-2 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-slate-200 transition-all inline-block cursor-pointer"
           >
             Join waitlist
           </a>

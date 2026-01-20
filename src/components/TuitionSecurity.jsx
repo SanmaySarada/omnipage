@@ -7,13 +7,13 @@ function TuitionSecurity() {
         <div className="flex flex-col md:flex-row justify-between items-end gap-10 mb-20 border-b border-white/5 pb-10">
           <div className="max-w-2xl">
             <h2 className="text-4xl font-serif font-light text-white mb-4">Built for trust.</h2>
-            <p className="text-lg text-slate-400 font-light">Security isn't a feature—it's the foundation of everything we build.</p>
+            <p className="text-lg text-slate-300 font-light">Security isn't a feature—it's the foundation of everything we build.</p>
           </div>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-px bg-white/10 border border-white/10 rounded-[2rem] overflow-hidden">
           <div className="p-10 bg-deep-purple hover:bg-surface transition-colors duration-300">
             <h4 className="text-lg font-medium text-white mb-2">AES-256 Encryption</h4>
-            <p className="text-sm text-slate-400 leading-relaxed">Data encrypted at rest and in transit using military standards.</p>
+            <p className="text-sm text-slate-300 leading-relaxed">Data encrypted at rest and in transit using military standards.</p>
           </div>
           <div className="p-10 bg-deep-purple hover:bg-surface transition-colors duration-300">
             <h4 className="text-lg font-medium text-white mb-2">Plaid Verified</h4>

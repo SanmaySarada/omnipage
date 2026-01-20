@@ -107,7 +107,7 @@ function TuitionWaitlist() {
         <h2 className="text-5xl md:text-7xl font-serif font-light text-white mb-6 leading-tight">
           The future of tuition <br/>is coming.
         </h2>
-        <p className="text-xl text-slate-400 mb-12 font-light max-w-xl mx-auto">
+        <p className="text-xl text-slate-300 mb-12 font-light max-w-xl mx-auto">
           Join the waitlist for exclusive early access to the Omni platform. Limited spots available for the upcoming academic year.
         </p>
         <form className="max-w-md mx-auto space-y-4" onSubmit={handleSubmit}>
@@ -146,7 +146,7 @@ function TuitionWaitlist() {
           {submitted && (
             <p className="text-sm text-accent mt-2">Thank you! You've been added to the waitlist.</p>
           )}
-          <p className="text-[10px] text-slate-400 mt-4 uppercase tracking-wider">No spam. Unsubscribe anytime.</p>
+          <p className="text-[10px] text-slate-300 mt-4 uppercase tracking-wider">No spam. Unsubscribe anytime.</p>
         </form>
       </div>
     </section>

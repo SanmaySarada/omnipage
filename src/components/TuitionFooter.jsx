@@ -16,9 +16,9 @@ function TuitionFooter() {
           </a>
         </div>
         <div className="flex justify-center gap-8">
-          <Link className="text-sm text-slate-400 hover:text-white transition-colors" to="/tos">Terms of Service</Link>
-          <Link className="text-sm text-slate-400 hover:text-white transition-colors" to="/privacy">Privacy Policy</Link>
-          <Link className="text-sm text-slate-400 hover:text-white transition-colors" to="/support">Contact Support</Link>
+          <Link className="text-sm text-slate-300 hover:text-white transition-colors" to="/tos">Terms of Service</Link>
+          <Link className="text-sm text-slate-300 hover:text-white transition-colors" to="/privacy">Privacy Policy</Link>
+          <Link className="text-sm text-slate-300 hover:text-white transition-colors" to="/support">Contact Support</Link>
         </div>
       </div>
     </footer>

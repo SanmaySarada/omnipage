@@ -26,16 +26,16 @@ function Support() {
               >
                 Omni Support
               </h1>
-              <div className="text-slate-400 space-y-8">
+              <div className="text-slate-300 space-y-8">
                 <p 
                   style={{ animationDelay: isLoaded ? '0.2s' : '0s' }}
-                  className={`text-base text-slate-400 font-light leading-relaxed font-sans ${isLoaded ? 'animate-fade-in' : ''}`}
+                  className={`text-base text-slate-300 font-light leading-relaxed font-sans ${isLoaded ? 'animate-fade-in' : ''}`}
                 >
                   We're here to help.
                 </p>
                 <p 
                   style={{ animationDelay: isLoaded ? '0.3s' : '0s' }}
-                  className={`text-base text-slate-400 font-light leading-relaxed font-sans ${isLoaded ? 'animate-fade-in' : ''}`}
+                  className={`text-base text-slate-300 font-light leading-relaxed font-sans ${isLoaded ? 'animate-fade-in' : ''}`}
                 >
                   If you have questions about Omni, need assistance with your account, or want to report a bug or issue, please reach out and we'll get back to you as soon as possible.
                 </p>
@@ -54,7 +54,7 @@ function Support() {
                         <span className="material-symbols-outlined text-accent text-xl">email</span>
                       </div>
                       <div>
-                        <p className="text-xs font-medium text-slate-400 uppercase tracking-wider mb-1">Email</p>
+                          <p className="text-xs font-medium text-slate-300 uppercase tracking-wider mb-1">Email</p>
                         <a 
                           href="mailto:josh29@stanford.edu" 
                           className="text-xl md:text-2xl font-medium text-white hover:text-accent transition-colors inline-flex items-center gap-2 group"
@@ -67,10 +67,10 @@ function Support() {
                       </div>
                     </div>
                     <div className="pt-6 border-t border-white/10">
-                      <p className="text-base text-slate-400 font-light font-sans mb-4">
+                      <p className="text-base text-slate-300 font-light font-sans mb-4">
                         When contacting support, please include:
                       </p>
-                      <ul className="list-none space-y-3 text-base text-slate-400 font-light font-sans">
+                      <ul className="list-none space-y-3 text-base text-slate-300 font-light font-sans">
                         <li className="flex items-start gap-3">
                           <span className="text-accent mt-1">•</span>
                           <span>The email associated with your Omni account</span>
@@ -93,7 +93,7 @@ function Support() {
                   className={`space-y-6 mt-12 ${isLoaded ? 'animate-fly-in-bottom' : ''}`}
                 >
                   <h2 className="text-2xl md:text-3xl font-serif font-light text-white">Common Topics We Can Help With</h2>
-                  <ul className="list-none space-y-3 text-base text-slate-400 font-light font-sans ml-4">
+                  <ul className="list-none space-y-3 text-base text-slate-300 font-light font-sans ml-4">
                     <li className="flex items-start gap-3">
                       <span className="text-accent mt-1">•</span>
                       <span>Account access or sign-in issues</span>
@@ -126,7 +126,7 @@ function Support() {
                   className={`space-y-4 mt-12 ${isLoaded ? 'animate-fly-in-bottom' : ''}`}
                 >
                   <h2 className="text-2xl md:text-3xl font-serif font-light text-white">Response Time</h2>
-                  <p className="text-base text-slate-400 font-light leading-relaxed font-sans">
+                  <p className="text-base text-slate-300 font-light leading-relaxed font-sans">
                     We typically respond within 24–48 hours during business days.
                   </p>
                 </div>
