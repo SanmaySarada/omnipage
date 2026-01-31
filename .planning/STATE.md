@@ -5,28 +5,28 @@
 See: .planning/PROJECT.md
 
 **Core value:** Visitors immediately understand that Omni unlocks rewards on tuition without costing schools anything - and trust the page enough to join the waitlist.
-**Current focus:** Phase 1 - Foundation
+**Current focus:** Phase 2 - Hero Section
 
 ## Current Position
 
-Phase: 1 of 10 (Foundation)
-Plan: 1 of 2 complete
-Status: In progress
-Last activity: 2026-01-31 - Completed 01-01-PLAN.md
+Phase: 1 of 10 (Foundation) - COMPLETE
+Plan: 2 of 2 complete
+Status: Phase complete
+Last activity: 2026-01-31 - Completed 01-02-PLAN.md
 
-Progress: [#---------] 5%
+Progress: [##--------] 10%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 1
-- Average duration: 5min
+- Total plans completed: 2
+- Average duration: 3.5min
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
-| 01-foundation | 1/2 | 5min | 5min |
+| 01-foundation | 2/2 | 7min | 3.5min |
 
 ## Accumulated Context
 
@@ -38,6 +38,8 @@ Progress: [#---------] 5%
 | 01-01 | Light-mode only | Fintech trust aesthetic, no dark mode toggle |
 | 01-01 | Inter font only | Clean typography, no display font needed |
 | 01-01 | Purple/blue primary (hue 260) | Premium fintech feel |
+| 01-02 | shadcn New York style | Cleaner, more professional appearance |
+| 01-02 | Restored custom tokens after shadcn init | Preserved brand colors over shadcn neutral defaults |
 
 ### Pending Todos
 
@@ -49,6 +51,6 @@ Progress: [#---------] 5%
 
 ## Session Continuity
 
-Last session: 2026-01-31T23:18:17Z
-Stopped at: Completed 01-01-PLAN.md
-Resume file: .planning/phases/01-foundation/01-02-PLAN.md
+Last session: 2026-01-31T23:21:56Z
+Stopped at: Completed 01-02-PLAN.md (Phase 1 complete)
+Resume file: .planning/phases/02-hero/02-01-PLAN.md (if exists)
