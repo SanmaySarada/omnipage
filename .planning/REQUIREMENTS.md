@@ -19,7 +19,7 @@
 - [ ] **HERO-03**: Mobile: gyroscope-reactive card tilt
 - [ ] **HERO-04**: Headline + subhead with staggered fade-in animation
 - [ ] **HERO-05**: Inline email capture (single field, no modal) with micro-validation
-- [ ] **HERO-06**: Trust microcopy line ("Bank-level security • No fees for schools • Rewards from day one")
+- [ ] **HERO-06**: Trust microcopy line ("Bank-level security | No fees for schools | Rewards from day one")
 - [ ] **HERO-07**: Animated gradient mesh background (slow drift)
 
 ### Trust & Social Proof
@@ -113,13 +113,57 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| (To be filled by roadmap creation) | | |
+| NAV-01 | Phase 2 | Pending |
+| NAV-02 | Phase 2 | Pending |
+| NAV-03 | Phase 2 | Pending |
+| NAV-04 | Phase 2 | Pending |
+| HERO-01 | Phase 6 | Pending |
+| HERO-02 | Phase 6 | Pending |
+| HERO-03 | Phase 6 | Pending |
+| HERO-04 | Phase 3 | Pending |
+| HERO-05 | Phase 3 | Pending |
+| HERO-06 | Phase 3 | Pending |
+| HERO-07 | Phase 3 | Pending |
+| TRUST-01 | Phase 3 | Pending |
+| TRUST-02 | Phase 9 | Pending |
+| HIW-01 | Phase 7 | Pending |
+| HIW-02 | Phase 7 | Pending |
+| HIW-03 | Phase 7 | Pending |
+| HIW-04 | Phase 7 | Pending |
+| AUD-01 | Phase 8 | Pending |
+| AUD-02 | Phase 8 | Pending |
+| AUD-03 | Phase 8 | Pending |
+| FEAT-01 | Phase 8 | Pending |
+| FEAT-02 | Phase 8 | Pending |
+| FEAT-03 | Phase 8 | Pending |
+| FEAT-04 | Phase 8 | Pending |
+| CALC-01 | Phase 9 | Pending |
+| CALC-02 | Phase 9 | Pending |
+| CALC-03 | Phase 9 | Pending |
+| CALC-04 | Phase 9 | Pending |
+| CALC-05 | Phase 9 | Pending |
+| DISC-01 | Phase 8 | Pending |
+| DISC-02 | Phase 8 | Pending |
+| FAQ-01 | Phase 9 | Pending |
+| FAQ-02 | Phase 9 | Pending |
+| CTA-01 | Phase 10 | Pending |
+| CTA-02 | Phase 10 | Pending |
+| CTA-03 | Phase 10 | Pending |
+| FOOT-01 | Phase 2 | Pending |
+| FOOT-02 | Phase 2 | Pending |
+| CORE-01 | Phase 1 | Pending |
+| CORE-02 | Phase 1 | Pending |
+| CORE-03 | Phase 4 | Pending |
+| CORE-04 | Phase 4 | Pending |
+| CORE-05 | Phase 10 | Pending |
+| CORE-06 | Phase 10 | Pending |
+| CORE-07 | Phase 10 | Pending |
 
 **Coverage:**
 - v1 requirements: 35 total
-- Mapped to phases: 0 (pending roadmap)
-- Unmapped: 35
+- Mapped to phases: 35
+- Unmapped: 0
 
 ---
 *Requirements defined: 2025-01-31*
-*Last updated: 2025-01-31 after initial definition*
+*Last updated: 2025-01-31 after roadmap creation*
