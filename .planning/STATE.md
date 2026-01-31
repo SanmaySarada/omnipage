@@ -12,7 +12,7 @@ See: .planning/PROJECT.md
 Phase: 2 of 10 (Layout Components)
 Plan: 2 of 3 complete
 Status: In progress
-Last activity: 2026-01-31 - Completed 02-03-PLAN.md
+Last activity: 2026-01-31 - Completed 02-02-PLAN.md
 
 Progress: [####------] 20%
 
@@ -43,6 +43,9 @@ Progress: [####------] 20%
 | 01-02 | Restored custom tokens after shadcn init | Preserved brand colors over shadcn neutral defaults |
 | 02-01 | Providers component pattern | Keep layout.tsx as server component for metadata |
 | 02-01 | Motion reducedMotion="user" | Respects OS prefers-reduced-motion setting |
+| 02-02 | Logo text "Omni" | Shorter brand name for cleaner header |
+| 02-02 | MobileNav from left (280px) | Standard mobile menu pattern |
+| 02-02 | Magnetic on desktop CTA only | Mobile lacks hover, effect only for desktop |
 
 ### Pending Todos
 
@@ -55,5 +58,5 @@ Progress: [####------] 20%
 ## Session Continuity
 
 Last session: 2026-01-31T23:53:00Z
-Stopped at: Completed 02-03-PLAN.md
-Resume file: .planning/phases/02-layout-components/02-04-PLAN.md
+Stopped at: Completed 02-02-PLAN.md
+Resume file: .planning/phases/02-layout-components/02-03-PLAN.md
