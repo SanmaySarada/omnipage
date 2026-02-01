@@ -10,11 +10,11 @@ See: .planning/PROJECT.md
 ## Current Position
 
 Phase: 5 of 10 (3D Infrastructure)
-Plan: 1 of 3 complete
+Plan: 2 of 3 complete
 Status: In progress
-Last activity: 2026-01-31 - Completed 05-01-PLAN.md (R3F Setup)
+Last activity: 2026-01-31 - Completed 05-02-PLAN.md (Scene3D Canvas)
 
-Progress: [#########-] 50%
+Progress: [##########] 55%
 
 ## Performance Metrics
 
@@ -30,7 +30,7 @@ Progress: [#########-] 50%
 | 02-layout-components | 4/4 | 10min | 2.5min |
 | 03-hero-section | 2/2 | 4min | 2min |
 | 04-animation-infrastructure | 1/1 | 3min | 3min |
-| 05-3d-infrastructure | 1/3 | 2min | 2min |
+| 05-3d-infrastructure | 2/3 | 4min | 2min |
 
 ## Accumulated Context
 
@@ -60,6 +60,9 @@ Progress: [#########-] 50%
 | 05-01 | R3F v9.5.0 exact version | Latest stable with React 19 support |
 | 05-01 | drei v10.7.7 exact version | Required for R3F v9 compatibility |
 | 05-01 | Only transpile 'three' | R3F and drei don't need transpilation |
+| 05-02 | Conservative iOS gl settings | powerPreference: 'default', antialias: false |
+| 05-02 | Dynamic import ssr: false | Prevents WebGL hydration errors |
+| 05-02 | Ref non-null assertion | Required for R3F eventSource type |
 
 ### Pending Todos
 
@@ -72,5 +75,5 @@ Progress: [#########-] 50%
 ## Session Continuity
 
 Last session: 2026-01-31
-Stopped at: Completed 05-01-PLAN.md (R3F Setup)
-Resume file: .planning/phases/05-3d-infrastructure/05-02-PLAN.md
+Stopped at: Completed 05-02-PLAN.md (Scene3D Canvas)
+Resume file: .planning/phases/05-3d-infrastructure/05-03-PLAN.md
