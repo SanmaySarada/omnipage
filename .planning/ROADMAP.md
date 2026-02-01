@@ -66,7 +66,11 @@ Plans:
 4. User sees trust microcopy line ("Bank-level security | No fees for schools | Rewards from day one")
 5. User sees 3-4 metric cards with hover lift effect below hero
 
-**Plans:** (created by /gsd:plan-phase)
+**Plans:** 2 plans
+
+Plans:
+- [ ] 03-01-PLAN.md — Setup (Input, gradient CSS, variants) and EmailCapture component
+- [ ] 03-02-PLAN.md — HeroContent, MetricCards, page integration, visual verification
 
 ---
 
@@ -192,8 +196,8 @@ Plans:
 | Phase | Status | Completed |
 |-------|--------|-----------|
 | 1 - Foundation | Complete | 2026-01-31 |
-| 2 - Layout Components | Complete ✓ | 2026-02-01 |
-| 3 - Hero Section | Not started | - |
+| 2 - Layout Components | Complete | 2026-02-01 |
+| 3 - Hero Section | Planned | - |
 | 4 - Animation Infrastructure | Not started | - |
 | 5 - 3D Infrastructure | Not started | - |
 | 6 - 3D Card | Not started | - |
