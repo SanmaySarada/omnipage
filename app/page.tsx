@@ -1,17 +1,9 @@
+import { HeroSection } from '@/components/hero/hero-section'
+
 export default function Page() {
   return (
     <>
-      {/* Hero placeholder */}
-      <section className="min-h-screen flex items-center justify-center">
-        <div className="text-center">
-          <h1 className="text-4xl font-bold text-foreground mb-4">
-            Omni Card
-          </h1>
-          <p className="text-muted-foreground mb-8">
-            Earn rewards on your biggest expense
-          </p>
-        </div>
-      </section>
+      <HeroSection />
 
       {/* How It Works */}
       <section id="how-it-works" className="min-h-screen flex items-center justify-center bg-muted/30">
