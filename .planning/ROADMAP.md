@@ -108,9 +108,9 @@ Plans:
 **Plans:** 3 plans
 
 Plans:
-- [ ] 05-01-PLAN.md — Install R3F v9 ecosystem and configure Next.js
-- [ ] 05-02-PLAN.md — Scene3D canvas infrastructure with View.Port pattern
-- [ ] 05-03-PLAN.md — Placeholder components and hero integration
+- [x] 05-01-PLAN.md — Install R3F v9 ecosystem and configure Next.js
+- [x] 05-02-PLAN.md — Scene3D canvas infrastructure with View.Port pattern
+- [x] 05-03-PLAN.md — Placeholder components and hero integration
 
 ---
 
@@ -207,7 +207,7 @@ Plans:
 | 2 - Layout Components | Complete | 2026-02-01 |
 | 3 - Hero Section | Complete | 2026-02-01 |
 | 4 - Animation Infrastructure | Complete | 2026-01-31 |
-| 5 - 3D Infrastructure | Planned | - |
+| 5 - 3D Infrastructure | Complete ✓ | 2026-01-31 |
 | 6 - 3D Card | Not started | - |
 | 7 - How It Works | Not started | - |
 | 8 - Content Sections | Not started | - |
