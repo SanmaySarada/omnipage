@@ -5,22 +5,22 @@
 See: .planning/PROJECT.md
 
 **Core value:** Visitors immediately understand that Omni unlocks rewards on tuition without costing schools anything - and trust the page enough to join the waitlist.
-**Current focus:** Phase 5 - 3D Infrastructure
+**Current focus:** Phase 6 - 3D Card Implementation
 
 ## Current Position
 
-Phase: 5 of 10 (3D Infrastructure)
-Plan: 2 of 3 complete
-Status: In progress
-Last activity: 2026-01-31 - Completed 05-02-PLAN.md (Scene3D Canvas)
+Phase: 5 of 10 (3D Infrastructure) - COMPLETE
+Plan: 3 of 3 complete
+Status: Phase complete
+Last activity: 2026-01-31 - Completed 05-03-PLAN.md (Placeholder Components & Hero Integration)
 
-Progress: [##########] 55%
+Progress: [############] 60%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 9
-- Average duration: 2.5min
+- Total plans completed: 10
+- Average duration: 2.4min
 
 **By Phase:**
 
@@ -30,7 +30,7 @@ Progress: [##########] 55%
 | 02-layout-components | 4/4 | 10min | 2.5min |
 | 03-hero-section | 2/2 | 4min | 2min |
 | 04-animation-infrastructure | 1/1 | 3min | 3min |
-| 05-3d-infrastructure | 2/3 | 4min | 2min |
+| 05-3d-infrastructure | 3/3 | 6min | 2min |
 
 ## Accumulated Context
 
@@ -63,6 +63,9 @@ Progress: [##########] 55%
 | 05-02 | Conservative iOS gl settings | powerPreference: 'default', antialias: false |
 | 05-02 | Dynamic import ssr: false | Prevents WebGL hydration errors |
 | 05-02 | Ref non-null assertion | Required for R3F eventSource type |
+| 05-03 | Loading fallback conditional | Return null when not loading to avoid layout shift |
+| 05-03 | Credit card proportions | 3.375:2.125 box geometry matches standard card ratio |
+| 05-03 | Mobile card first | order-first lg:order-last for visual impact on mobile |
 
 ### Pending Todos
 
@@ -75,5 +78,5 @@ Progress: [##########] 55%
 ## Session Continuity
 
 Last session: 2026-01-31
-Stopped at: Completed 05-02-PLAN.md (Scene3D Canvas)
-Resume file: .planning/phases/05-3d-infrastructure/05-03-PLAN.md
+Stopped at: Completed 05-03-PLAN.md (Placeholder Components & Hero Integration)
+Resume file: .planning/phases/06-card-model/06-01-PLAN.md
