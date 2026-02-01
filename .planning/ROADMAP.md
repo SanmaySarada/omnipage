@@ -105,7 +105,12 @@ Plans:
 3. Placeholder/skeleton shows while 3D loads
 4. iOS Safari WebGL context loss is handled gracefully (recovery or fallback)
 
-**Plans:** (created by /gsd:plan-phase)
+**Plans:** 3 plans
+
+Plans:
+- [ ] 05-01-PLAN.md — Install R3F v9 ecosystem and configure Next.js
+- [ ] 05-02-PLAN.md — Scene3D canvas infrastructure with View.Port pattern
+- [ ] 05-03-PLAN.md — Placeholder components and hero integration
 
 ---
 
@@ -201,8 +206,8 @@ Plans:
 | 1 - Foundation | Complete | 2026-01-31 |
 | 2 - Layout Components | Complete | 2026-02-01 |
 | 3 - Hero Section | Complete | 2026-02-01 |
-| 4 - Animation Infrastructure | Complete ✓ | 2026-01-31 |
-| 5 - 3D Infrastructure | Not started | - |
+| 4 - Animation Infrastructure | Complete | 2026-01-31 |
+| 5 - 3D Infrastructure | Planned | - |
 | 6 - 3D Card | Not started | - |
 | 7 - How It Works | Not started | - |
 | 8 - Content Sections | Not started | - |
