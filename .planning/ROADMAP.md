@@ -86,7 +86,10 @@ Plans:
 3. Animations maintain 60fps (no jank visible on scroll)
 4. Animation variants are centralized and reusable across components
 
-**Plans:** (created by /gsd:plan-phase)
+**Plans:** 1 plan
+
+Plans:
+- [ ] 04-01-PLAN.md — ScrollReveal component, extended variants, and verification
 
 ---
 
@@ -197,8 +200,8 @@ Plans:
 |-------|--------|-----------|
 | 1 - Foundation | Complete | 2026-01-31 |
 | 2 - Layout Components | Complete | 2026-02-01 |
-| 3 - Hero Section | Complete ✓ | 2026-02-01 |
-| 4 - Animation Infrastructure | Not started | - |
+| 3 - Hero Section | Complete | 2026-02-01 |
+| 4 - Animation Infrastructure | Planned | - |
 | 5 - 3D Infrastructure | Not started | - |
 | 6 - 3D Card | Not started | - |
 | 7 - How It Works | Not started | - |
