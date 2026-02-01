@@ -7,10 +7,10 @@
 
 ### Navigation
 
-- [ ] **NAV-01**: Sticky nav with logo, section links, and "Join Waitlist" CTA
-- [ ] **NAV-02**: Mobile hamburger menu with slide-out navigation
-- [ ] **NAV-03**: Magnetic hover effect on CTA button (cursor-aware pull)
-- [ ] **NAV-04**: Smooth scroll to sections on nav link click
+- [x] **NAV-01**: Sticky nav with logo, section links, and "Join Waitlist" CTA
+- [x] **NAV-02**: Mobile hamburger menu with slide-out navigation
+- [x] **NAV-03**: Magnetic hover effect on CTA button (cursor-aware pull)
+- [x] **NAV-04**: Smooth scroll to sections on nav link click
 
 ### Hero
 
@@ -73,8 +73,8 @@
 
 ### Footer
 
-- [ ] **FOOT-01**: Logo, nav links, legal placeholders (Privacy, Terms)
-- [ ] **FOOT-02**: Social icon placeholders
+- [x] **FOOT-01**: Logo, nav links, legal placeholders (Privacy, Terms)
+- [x] **FOOT-02**: Social icon placeholders
 
 ### Cross-Cutting
 
@@ -113,10 +113,10 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| NAV-01 | Phase 2 | Pending |
-| NAV-02 | Phase 2 | Pending |
-| NAV-03 | Phase 2 | Pending |
-| NAV-04 | Phase 2 | Pending |
+| NAV-01 | Phase 2 | Complete |
+| NAV-02 | Phase 2 | Complete |
+| NAV-03 | Phase 2 | Complete |
+| NAV-04 | Phase 2 | Complete |
 | HERO-01 | Phase 6 | Pending |
 | HERO-02 | Phase 6 | Pending |
 | HERO-03 | Phase 6 | Pending |
@@ -149,8 +149,8 @@
 | CTA-01 | Phase 10 | Pending |
 | CTA-02 | Phase 10 | Pending |
 | CTA-03 | Phase 10 | Pending |
-| FOOT-01 | Phase 2 | Pending |
-| FOOT-02 | Phase 2 | Pending |
+| FOOT-01 | Phase 2 | Complete |
+| FOOT-02 | Phase 2 | Complete |
 | CORE-01 | Phase 1 | Complete |
 | CORE-02 | Phase 1 | Complete |
 | CORE-03 | Phase 4 | Pending |
