@@ -80,8 +80,8 @@
 
 - [ ] **CORE-01**: Light mode only (finance = trust = clean light aesthetic)
 - [ ] **CORE-02**: Design system: spacing scale, type scale, color tokens, consistent radii/shadows
-- [ ] **CORE-03**: 60fps animations (GPU transforms, lazy loading)
-- [ ] **CORE-04**: prefers-reduced-motion support (legally required, WCAG 2.3.3)
+- [x] **CORE-03**: 60fps animations (GPU transforms, lazy loading)
+- [x] **CORE-04**: prefers-reduced-motion support (legally required, WCAG 2.3.3)
 - [ ] **CORE-05**: WCAG 2.1 AA accessibility (keyboard nav, screen reader friendly)
 - [ ] **CORE-06**: SEO meta tags + Open Graph for social sharing
 - [ ] **CORE-07**: Lighthouse 90+ performance score
@@ -153,8 +153,8 @@
 | FOOT-02 | Phase 2 | Complete |
 | CORE-01 | Phase 1 | Complete |
 | CORE-02 | Phase 1 | Complete |
-| CORE-03 | Phase 4 | Pending |
-| CORE-04 | Phase 4 | Pending |
+| CORE-03 | Phase 4 | Complete |
+| CORE-04 | Phase 4 | Complete |
 | CORE-05 | Phase 10 | Pending |
 | CORE-06 | Phase 10 | Pending |
 | CORE-07 | Phase 10 | Pending |
