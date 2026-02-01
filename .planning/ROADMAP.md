@@ -69,8 +69,8 @@ Plans:
 **Plans:** 2 plans
 
 Plans:
-- [ ] 03-01-PLAN.md — Setup (Input, gradient CSS, variants) and EmailCapture component
-- [ ] 03-02-PLAN.md — HeroContent, MetricCards, page integration, visual verification
+- [x] 03-01-PLAN.md — Setup (Input, gradient CSS, variants) and EmailCapture component
+- [x] 03-02-PLAN.md — HeroContent, MetricCards, page integration, visual verification
 
 ---
 
@@ -197,7 +197,7 @@ Plans:
 |-------|--------|-----------|
 | 1 - Foundation | Complete | 2026-01-31 |
 | 2 - Layout Components | Complete | 2026-02-01 |
-| 3 - Hero Section | Planned | - |
+| 3 - Hero Section | Complete ✓ | 2026-02-01 |
 | 4 - Animation Infrastructure | Not started | - |
 | 5 - 3D Infrastructure | Not started | - |
 | 6 - 3D Card | Not started | - |

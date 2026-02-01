@@ -17,14 +17,14 @@
 - [ ] **HERO-01**: 3D interactive card (React Three Fiber) with cursor-reactive tilt and rotation
 - [ ] **HERO-02**: Metallic card materials with holographic shimmer effect
 - [ ] **HERO-03**: Mobile: gyroscope-reactive card tilt
-- [ ] **HERO-04**: Headline + subhead with staggered fade-in animation
-- [ ] **HERO-05**: Inline email capture (single field, no modal) with micro-validation
-- [ ] **HERO-06**: Trust microcopy line ("Bank-level security | No fees for schools | Rewards from day one")
-- [ ] **HERO-07**: Animated gradient mesh background (slow drift)
+- [x] **HERO-04**: Headline + subhead with staggered fade-in animation
+- [x] **HERO-05**: Inline email capture (single field, no modal) with micro-validation
+- [x] **HERO-06**: Trust microcopy line ("Bank-level security | No fees for schools | Rewards from day one")
+- [x] **HERO-07**: Animated gradient mesh background (slow drift)
 
 ### Trust & Social Proof
 
-- [ ] **TRUST-01**: 3-4 metric cards with hover lift effect ("Built for $X in tuition" / "Zero fees for schools")
+- [x] **TRUST-01**: 3-4 metric cards with hover lift effect ("Built for $X in tuition" / "Zero fees for schools")
 - [ ] **TRUST-02**: Security section with badges and expandable accordion for details
 
 ### How It Works
@@ -120,11 +120,11 @@
 | HERO-01 | Phase 6 | Pending |
 | HERO-02 | Phase 6 | Pending |
 | HERO-03 | Phase 6 | Pending |
-| HERO-04 | Phase 3 | Pending |
-| HERO-05 | Phase 3 | Pending |
-| HERO-06 | Phase 3 | Pending |
-| HERO-07 | Phase 3 | Pending |
-| TRUST-01 | Phase 3 | Pending |
+| HERO-04 | Phase 3 | Complete |
+| HERO-05 | Phase 3 | Complete |
+| HERO-06 | Phase 3 | Complete |
+| HERO-07 | Phase 3 | Complete |
+| TRUST-01 | Phase 3 | Complete |
 | TRUST-02 | Phase 9 | Pending |
 | HIW-01 | Phase 7 | Pending |
 | HIW-02 | Phase 7 | Pending |
