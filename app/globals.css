@@ -129,3 +129,8 @@
     cursor: pointer;
   }
 }
+
+/* Container padding - Tailwind v4 doesn't include padding by default */
+.container {
+  @apply px-4 sm:px-6 lg:px-8;
+}
