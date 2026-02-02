@@ -126,7 +126,12 @@ Plans:
 3. User on mobile tilts device and card responds to gyroscope
 4. 3D card maintains 60fps during interaction
 
-**Plans:** (created by /gsd:plan-phase)
+**Plans:** 3 plans
+
+Plans:
+- [ ] 06-01-PLAN.md — Install maath and create CardModel with premium materials
+- [ ] 06-02-PLAN.md — useDeviceOrientation hook and CardInteractive with cursor tracking
+- [ ] 06-03-PLAN.md — Full integration into HeroCard3D with Environment
 
 ---
 
@@ -207,8 +212,8 @@ Plans:
 | 2 - Layout Components | Complete | 2026-02-01 |
 | 3 - Hero Section | Complete | 2026-02-01 |
 | 4 - Animation Infrastructure | Complete | 2026-01-31 |
-| 5 - 3D Infrastructure | Complete ✓ | 2026-01-31 |
-| 6 - 3D Card | Not started | - |
+| 5 - 3D Infrastructure | Complete | 2026-01-31 |
+| 6 - 3D Card | Planned | - |
 | 7 - How It Works | Not started | - |
 | 8 - Content Sections | Not started | - |
 | 9 - Interactive Features | Not started | - |
