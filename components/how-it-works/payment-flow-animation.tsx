@@ -7,6 +7,9 @@ interface PaymentFlowAnimationProps {
   progress: MotionValue<number>
 }
 
+// Path for particles - first segment only (straight flow before split)
+const PARTICLE_PATH = 'M 50 100 C 120 100, 180 100, 200 100'
+
 export function PaymentFlowAnimation({ progress }: PaymentFlowAnimationProps) {
   // Phase 1: Card Swipe (0% - 33% scroll)
   const cardX = useTransform(progress, [0, 0.33], ['-100%', '0%'])
@@ -15,6 +18,13 @@ export function PaymentFlowAnimation({ progress }: PaymentFlowAnimationProps) {
 
   // Phase 2: Path Drawing (25% - 70% scroll)
   const pathLength = useTransform(progress, [0.25, 0.7], [0, 1])
+
+  // Particle offset-distance transforms (staggered by 0.03 progress)
+  const p0Distance = useTransform(progress, [0.20, 0.65], ['0%', '100%'])
+  const p1Distance = useTransform(progress, [0.23, 0.68], ['0%', '100%'])
+  const p2Distance = useTransform(progress, [0.26, 0.71], ['0%', '100%'])
+  const p3Distance = useTransform(progress, [0.29, 0.74], ['0%', '100%'])
+  const p4Distance = useTransform(progress, [0.32, 0.77], ['0%', '100%'])
 
   // Phase 3: Split Animation (60% - 100% scroll)
   const achY = useTransform(progress, [0.6, 0.9], ['0%', '-40%'])
@@ -85,6 +95,62 @@ export function PaymentFlowAnimation({ progress }: PaymentFlowAnimationProps) {
             strokeLinecap="round"
           />
         </svg>
+
+        {/* Particles following the path */}
+        <div className="absolute w-full max-w-lg pointer-events-none z-10">
+          <svg viewBox="0 0 400 200" className="w-full" preserveAspectRatio="xMidYMid meet">
+            {/* Particle 0 - primary */}
+            <motion.circle
+              r="4"
+              className="fill-primary"
+              style={{
+                offsetPath: `path('${PARTICLE_PATH}')`,
+                offsetRotate: '0deg',
+                offsetDistance: p0Distance,
+              }}
+            />
+            {/* Particle 1 - primary */}
+            <motion.circle
+              r="4"
+              className="fill-primary"
+              style={{
+                offsetPath: `path('${PARTICLE_PATH}')`,
+                offsetRotate: '0deg',
+                offsetDistance: p1Distance,
+              }}
+            />
+            {/* Particle 2 - primary */}
+            <motion.circle
+              r="4"
+              className="fill-primary"
+              style={{
+                offsetPath: `path('${PARTICLE_PATH}')`,
+                offsetRotate: '0deg',
+                offsetDistance: p2Distance,
+              }}
+            />
+            {/* Particle 3 - amber */}
+            <motion.circle
+              r="4"
+              className="fill-amber-500"
+              style={{
+                offsetPath: `path('${PARTICLE_PATH}')`,
+                offsetRotate: '0deg',
+                offsetDistance: p3Distance,
+              }}
+            />
+            {/* Particle 4 - amber */}
+            <motion.circle
+              r="4"
+              className="fill-amber-500"
+              style={{
+                offsetPath: `path('${PARTICLE_PATH}')`,
+                offsetRotate: '0deg',
+                offsetDistance: p4Distance,
+              }}
+            />
+          </svg>
+        </div>
 
         {/* Step 2 label */}
         <motion.p
