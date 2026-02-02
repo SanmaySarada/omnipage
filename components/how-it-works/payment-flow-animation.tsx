@@ -26,6 +26,20 @@ export function PaymentFlowAnimation({ progress }: PaymentFlowAnimationProps) {
   const p3Distance = useTransform(progress, [0.29, 0.74], ['0%', '100%'])
   const p4Distance = useTransform(progress, [0.32, 0.77], ['0%', '100%'])
 
+  // Particle opacity transforms (fade in/out over 5% of range)
+  const p0Opacity = useTransform(progress, [0.20, 0.25, 0.60, 0.65], [0, 1, 1, 0])
+  const p1Opacity = useTransform(progress, [0.23, 0.28, 0.63, 0.68], [0, 1, 1, 0])
+  const p2Opacity = useTransform(progress, [0.26, 0.31, 0.66, 0.71], [0, 1, 1, 0])
+  const p3Opacity = useTransform(progress, [0.29, 0.34, 0.69, 0.74], [0, 1, 1, 0])
+  const p4Opacity = useTransform(progress, [0.32, 0.37, 0.72, 0.77], [0, 1, 1, 0])
+
+  // Particle scale transforms (pulse effect: 0.5 -> 1 -> 0.5)
+  const p0Scale = useTransform(progress, [0.20, 0.425, 0.65], [0.5, 1, 0.5])
+  const p1Scale = useTransform(progress, [0.23, 0.455, 0.68], [0.5, 1, 0.5])
+  const p2Scale = useTransform(progress, [0.26, 0.485, 0.71], [0.5, 1, 0.5])
+  const p3Scale = useTransform(progress, [0.29, 0.515, 0.74], [0.5, 1, 0.5])
+  const p4Scale = useTransform(progress, [0.32, 0.545, 0.77], [0.5, 1, 0.5])
+
   // Phase 3: Split Animation (60% - 100% scroll)
   const achY = useTransform(progress, [0.6, 0.9], ['0%', '-40%'])
   const achOpacity = useTransform(progress, [0.6, 0.75], [0, 1])
@@ -107,6 +121,8 @@ export function PaymentFlowAnimation({ progress }: PaymentFlowAnimationProps) {
                 offsetPath: `path('${PARTICLE_PATH}')`,
                 offsetRotate: '0deg',
                 offsetDistance: p0Distance,
+                opacity: p0Opacity,
+                scale: p0Scale,
               }}
             />
             {/* Particle 1 - primary */}
@@ -117,6 +133,8 @@ export function PaymentFlowAnimation({ progress }: PaymentFlowAnimationProps) {
                 offsetPath: `path('${PARTICLE_PATH}')`,
                 offsetRotate: '0deg',
                 offsetDistance: p1Distance,
+                opacity: p1Opacity,
+                scale: p1Scale,
               }}
             />
             {/* Particle 2 - primary */}
@@ -127,6 +145,8 @@ export function PaymentFlowAnimation({ progress }: PaymentFlowAnimationProps) {
                 offsetPath: `path('${PARTICLE_PATH}')`,
                 offsetRotate: '0deg',
                 offsetDistance: p2Distance,
+                opacity: p2Opacity,
+                scale: p2Scale,
               }}
             />
             {/* Particle 3 - amber */}
@@ -137,6 +157,8 @@ export function PaymentFlowAnimation({ progress }: PaymentFlowAnimationProps) {
                 offsetPath: `path('${PARTICLE_PATH}')`,
                 offsetRotate: '0deg',
                 offsetDistance: p3Distance,
+                opacity: p3Opacity,
+                scale: p3Scale,
               }}
             />
             {/* Particle 4 - amber */}
@@ -147,6 +169,8 @@ export function PaymentFlowAnimation({ progress }: PaymentFlowAnimationProps) {
                 offsetPath: `path('${PARTICLE_PATH}')`,
                 offsetRotate: '0deg',
                 offsetDistance: p4Distance,
+                opacity: p4Opacity,
+                scale: p4Scale,
               }}
             />
           </svg>
