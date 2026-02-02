@@ -10,17 +10,17 @@ See: .planning/PROJECT.md
 ## Current Position
 
 Phase: 6 of 10 (3D Card Implementation)
-Plan: 2 of 3 complete (06-01, 06-02)
-Status: In progress
-Last activity: 2026-02-02 - Completed 06-01-PLAN.md (Card Model & Materials)
+Plan: 3 of 3 complete (06-01, 06-02, 06-03)
+Status: Phase complete
+Last activity: 2026-02-02 - Completed 06-03-PLAN.md (Hero Card Integration)
 
-Progress: [##############] 70%
+Progress: [################] 80%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 12
-- Average duration: 2.4min
+- Total plans completed: 13
+- Average duration: 2.5min
 
 **By Phase:**
 
@@ -31,7 +31,7 @@ Progress: [##############] 70%
 | 03-hero-section | 2/2 | 4min | 2min |
 | 04-animation-infrastructure | 1/1 | 3min | 3min |
 | 05-3d-infrastructure | 3/3 | 6min | 2min |
-| 06-3d-card | 2/3 | 5min | 2.5min |
+| 06-3d-card | 3/3 | 8min | 2.7min |
 
 ## Accumulated Context
 
@@ -74,6 +74,9 @@ Progress: [##############] 70%
 | 06-01 | RoundedBox 3.375x2.125x0.05 | Credit card ISO proportions |
 | 06-01 | Iridescence 0.7 | Subtle holographic effect, not gaudy |
 | 06-01 | Base color #0f0f23 | Dark premium appearance |
+| 06-03 | Environment preset='city' | Urban HDR for premium metallic reflections |
+| 06-03 | Reduced light intensities | ambient 0.3, directional 0.8 with Environment |
+| 06-03 | Permission button pattern | Show only when isSupported AND permission === 'prompt' |
 
 ### Pending Todos
 
@@ -86,5 +89,5 @@ Progress: [##############] 70%
 ## Session Continuity
 
 Last session: 2026-02-02
-Stopped at: Completed 06-01-PLAN.md (Card Model & Materials)
-Resume file: .planning/phases/06-3d-card/06-03-PLAN.md
+Stopped at: Completed 06-03-PLAN.md (Hero Card Integration) - Phase 6 complete
+Resume file: None
