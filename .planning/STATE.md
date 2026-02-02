@@ -10,16 +10,16 @@ See: .planning/PROJECT.md
 ## Current Position
 
 Phase: 7 of 10 (How It Works)
-Plan: 3 of 3 complete
-Status: Phase complete
-Last activity: 2026-02-02 - Completed 07-03-PLAN.md (Progress Dots Navigation)
+Plan: 4 of 4 complete (gap closure)
+Status: Phase complete (gap closed)
+Last activity: 2026-02-02 - Completed 07-04-PLAN.md (Path Particles Gap Closure)
 
-Progress: [#################-] 88%
+Progress: [##################] 89%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 16
+- Total plans completed: 17
 - Average duration: 2.3min
 
 **By Phase:**
@@ -32,7 +32,7 @@ Progress: [#################-] 88%
 | 04-animation-infrastructure | 1/1 | 3min | 3min |
 | 05-3d-infrastructure | 3/3 | 6min | 2min |
 | 06-3d-card | 3/3 | 8min | 2.7min |
-| 07-how-it-works | 3/3 | 5min | 1.7min |
+| 07-how-it-works | 4/4 | 7min | 1.75min |
 
 ## Accumulated Context
 
@@ -87,6 +87,9 @@ Progress: [#################-] 88%
 | 07-03 | Progress dots desktop-only | Hidden on mobile with hidden md:flex |
 | 07-03 | Fade range 0.02-0.98 | Dots fully visible during active scroll |
 | 07-03 | 44x44px touch targets | p-4 -m-4 pattern for accessible tap areas |
+| 07-04 | SVG circle with CSS offset-path | Cleaner integration with existing SVG |
+| 07-04 | First path segment for particles | Avoids complexity at branch point |
+| 07-04 | 3 primary + 2 amber particles | Foreshadow ACH/rewards split |
 
 ### Pending Todos
 
@@ -99,5 +102,5 @@ Progress: [#################-] 88%
 ## Session Continuity
 
 Last session: 2026-02-02
-Stopped at: Completed 07-03-PLAN.md (Progress Dots Navigation) - Phase 7 complete
-Resume file: None - ready for Phase 8
+Stopped at: Completed 07-04-PLAN.md (Path Particles Gap Closure) - Phase 7 gap closed
+Resume file: None - ready for Phase 8 or verification re-run
