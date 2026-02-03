@@ -1,11 +1,6 @@
 'use client'
 
-import { useMemo } from 'react'
-import {
-  DollarOdometer,
-  PointsOdometer,
-  PercentOdometer,
-} from '@/components/how-you-earn/shared/odometer'
+import { useMemo, useState, useEffect } from 'react'
 
 interface CalculatorResultsProps {
   tuition: number
@@ -14,51 +9,74 @@ interface CalculatorResultsProps {
 
 export function CalculatorResults({ tuition, monthlySpend }: CalculatorResultsProps) {
   const results = useMemo(() => {
-    // Tuition rewards: 1% back as points (100 points per dollar of reward)
-    const tuitionPoints = tuition * 0.01 * 100
+    const annualSpend = monthlySpend * 12
 
-    // Everyday spend rewards: 5% avg merchant multiplier, 12 months
-    const yearlySpend = monthlySpend * 12
-    const spendPoints = yearlySpend * 0.05 * 100
+    // Base Points: 1 point per $1 on all spend (tuition + everyday)
+    const basePoints = tuition + annualSpend
 
-    // Total points earned
-    const totalPoints = Math.round(tuitionPoints + spendPoints)
+    // Bonus: threshold-based on spend ratio
+    let bonusValue = 0
+    if (annualSpend >= 0.40 * tuition) {
+      bonusValue = 0.01 * tuition
+    } else if (annualSpend >= 0.20 * tuition) {
+      bonusValue = 0.005 * tuition
+    }
 
-    // 1 point = $0.01
-    const dollarValue = totalPoints * 0.01
-
-    // Tuition reduction as percentage
-    const tuitionReduction = (dollarValue / tuition) * 100
+    // Total
+    const totalValue = (basePoints * 0.01) + bonusValue
+    const tuitionReduction = (totalValue / tuition) * 100
 
     return {
-      totalPoints,
-      dollarValue: Math.round(dollarValue),
-      tuitionReduction: Math.round(tuitionReduction * 10) / 10, // 1 decimal place
+      totalPoints: Math.round(basePoints),
+      totalValue: Math.round(totalValue),
+      tuitionReduction: Math.round(tuitionReduction * 10) / 10,
     }
   }, [tuition, monthlySpend])
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8">
-      <div className="text-center">
-        <div className="font-display text-3xl sm:text-4xl font-bold text-foreground">
-          <PointsOdometer value={results.totalPoints} />
-        </div>
-        <p className="text-sm text-muted-foreground mt-2">Total Points</p>
-      </div>
+    <div className="grid grid-cols-3 gap-4 text-center">
+      <ResultItem
+        value={results.totalPoints.toLocaleString()}
+        label="Points Earned"
+        suffix="pts"
+      />
+      <ResultItem
+        value={`$${results.totalValue.toLocaleString()}`}
+        label="Cash Value"
+        highlight
+      />
+      <ResultItem
+        value={`${results.tuitionReduction}%`}
+        label="Tuition Savings"
+      />
+    </div>
+  )
+}
 
-      <div className="text-center">
-        <div className="font-display text-3xl sm:text-4xl font-bold text-foreground">
-          <DollarOdometer value={results.dollarValue} />
-        </div>
-        <p className="text-sm text-muted-foreground mt-2">Dollar Value</p>
-      </div>
+function ResultItem({
+  value,
+  label,
+  suffix,
+  highlight
+}: {
+  value: string
+  label: string
+  suffix?: string
+  highlight?: boolean
+}) {
+  const [display, setDisplay] = useState(value)
 
-      <div className="text-center">
-        <div className="font-display text-3xl sm:text-4xl font-bold text-primary">
-          <PercentOdometer value={results.tuitionReduction} />
-        </div>
-        <p className="text-sm text-muted-foreground mt-2">Tuition Reduction</p>
+  useEffect(() => {
+    setDisplay(value)
+  }, [value])
+
+  return (
+    <div>
+      <div className={`font-display text-2xl sm:text-3xl font-bold tabular-nums ${highlight ? 'text-primary' : 'text-foreground'}`}>
+        {display}
+        {suffix && <span className="text-base font-normal text-muted-foreground ml-1">{suffix}</span>}
       </div>
+      <p className="text-xs sm:text-sm text-muted-foreground mt-1">{label}</p>
     </div>
   )
 }
