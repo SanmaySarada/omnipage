@@ -2,6 +2,8 @@
 
 import { useReducedMotion } from 'framer-motion'
 import { UnlockRate } from './unlock-rate'
+import { DiscoverRewards } from './discover-rewards'
+import { RewardsLoop } from './rewards-loop'
 
 // Placeholder components - will be replaced in subsequent plans
 function TuitionRewardsPlaceholder() {
@@ -10,28 +12,6 @@ function TuitionRewardsPlaceholder() {
       <div className="text-center p-8">
         <h2 className="text-3xl font-bold mb-4">Earn on Every Tuition Payment</h2>
         <p className="text-muted-foreground">Animation coming in 07-06</p>
-      </div>
-    </section>
-  )
-}
-
-function DiscoverRewardsPlaceholder() {
-  return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-background to-muted/30">
-      <div className="text-center p-8">
-        <h2 className="text-3xl font-bold mb-4">Discover Local Rewards</h2>
-        <p className="text-muted-foreground">Animation coming in 07-08</p>
-      </div>
-    </section>
-  )
-}
-
-function RewardsLoopPlaceholder() {
-  return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-muted/30 to-background">
-      <div className="text-center p-8">
-        <h2 className="text-3xl font-bold mb-4">Redeem & Repeat</h2>
-        <p className="text-muted-foreground">Animation coming in 07-09</p>
       </div>
     </section>
   )
@@ -92,8 +72,8 @@ export function HowYouEarnSection() {
     <div id="how-it-works">
       <TuitionRewardsPlaceholder />
       <UnlockRate />
-      <DiscoverRewardsPlaceholder />
-      <RewardsLoopPlaceholder />
+      <DiscoverRewards />
+      <RewardsLoop />
     </div>
   )
 }
