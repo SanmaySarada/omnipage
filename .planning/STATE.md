@@ -137,6 +137,9 @@ Progress: [===============-----] 75% (08-01, 08-02, 08-03 complete; 08-04 remain
 | 08-01 | iconHoverVariants scale+rotate | Subtle attention-grabbing icon animation |
 | 08-01 | whileFocus=hover parity | Keyboard users get same visual feedback |
 | 08-01 | article semantic element | Proper HTML for feature card content |
+| 08-02 | layoutId for animated underline | Cleaner than getBoundingClientRect, handles resizes |
+| 08-02 | AnimatePresence mode=wait | Exit before enter for clean crossfade |
+| 08-02 | Conditional render over forceMount | TypeScript constraint, cleaner AnimatePresence integration |
 | 08-03 | Static notification over MotionValue | Simpler for preview context, no scroll dependency |
 | 08-03 | iPhone 14/15 aspect ratio (9/19.5) | Realistic phone mockup dimensions |
 | 08-03 | Pure CSS phone frame | No external dependencies for device mockup |
