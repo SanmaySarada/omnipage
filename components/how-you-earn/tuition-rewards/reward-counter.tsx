@@ -39,49 +39,21 @@ export function RewardCounter({
 
   return (
     <motion.div
-      className={`text-center ${className}`}
+      className={`flex items-center gap-3 ${className}`}
       style={{ opacity, scale, y }}
     >
-      {/* Main counter */}
-      <div
-        className="rounded-2xl p-6 md:p-8 shadow-lg"
-        style={{
-          background: `linear-gradient(to bottom right, color-mix(in oklch, ${ISO_COLORS.success} 10%, white), color-mix(in oklch, ${ISO_COLORS.success} 5%, white))`,
-          borderWidth: 1,
-          borderColor: `color-mix(in oklch, ${ISO_COLORS.success} 25%, transparent)`,
-          boxShadow: `0 4px 15px -3px color-mix(in oklch, ${ISO_COLORS.success} 15%, transparent)`,
-        }}
-      >
-        <div className="text-sm text-muted-foreground mb-2 uppercase tracking-wide">
-          Rewards Earned
-        </div>
-
-        <div className="text-4xl md:text-5xl lg:text-6xl font-bold" style={{ color: ISO_COLORS.success }}>
-          +<DollarOdometer
+      {/* Compact inline reward display */}
+      <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-muted/50 border border-border">
+        <span className="text-sm text-muted-foreground">Rewards:</span>
+        <span className="text-lg md:text-xl font-semibold text-foreground">
+          +$<DollarOdometer
             value={EXAMPLE_DATA.rewardAmount}
             progress={progress}
             progressRange={counterRange}
           />
-        </div>
-
-        <div className="text-sm text-muted-foreground mt-2">
-          in points
-        </div>
+        </span>
+        <span className="text-xs text-muted-foreground">pts</span>
       </div>
-
-      {/* Subtext */}
-      <motion.p
-        className="text-muted-foreground mt-4 text-sm md:text-base max-w-xs mx-auto"
-        style={{
-          opacity: useTransform(
-            progress ?? { get: () => 1 } as MotionValue<number>,
-            [counterRange[1] - 0.1, counterRange[1]],
-            [0, 1]
-          ),
-        }}
-      >
-        That's money back on something you're already paying.
-      </motion.p>
     </motion.div>
   )
 }

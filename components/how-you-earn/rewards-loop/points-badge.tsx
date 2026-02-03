@@ -36,20 +36,13 @@ export function PointsBadge({
       className={`text-center ${className}`}
       style={{ opacity, scale }}
     >
-      {/* Badge container */}
-      <div
-        className="inline-block rounded-2xl p-8 md:p-10 shadow-xl"
-        style={{
-          background: `linear-gradient(to bottom right, color-mix(in oklch, ${ISO_COLORS.primary} 15%, white), color-mix(in oklch, ${ISO_COLORS.amber} 15%, white))`,
-          borderWidth: 1,
-          borderColor: `color-mix(in oklch, ${ISO_COLORS.primary} 30%, transparent)`,
-        }}
-      >
-        <div className="text-sm text-muted-foreground mb-2 uppercase tracking-wide">
-          Your Points
+      {/* Badge container - refined professional look */}
+      <div className="inline-block rounded-xl px-6 py-4 md:px-8 md:py-5 bg-muted/50 border border-border">
+        <div className="text-xs text-muted-foreground mb-1 uppercase tracking-wide">
+          Total Points
         </div>
 
-        <div className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground">
+        <div className="text-2xl md:text-3xl font-semibold text-foreground">
           <PointsOdometer
             value={EXAMPLE_DATA.totalPoints}
             progress={progress}
@@ -57,8 +50,8 @@ export function PointsBadge({
           />
         </div>
 
-        <div className="text-sm text-muted-foreground mt-2">
-          combined from all sources
+        <div className="text-xs text-muted-foreground mt-1">
+          from all sources
         </div>
       </div>
     </motion.div>

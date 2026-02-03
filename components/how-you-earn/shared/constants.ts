@@ -11,12 +11,12 @@ export const ISO_COLORS = {
   surfaceRight: 'oklch(0.82 0.03 250)',
   surfaceFront: 'oklch(0.92 0.015 250)',
 
-  // Accents - Vibrant and distinct
-  success: 'oklch(0.65 0.22 160)',      // Emerald green
-  successLight: 'oklch(0.85 0.15 160)',
-  amber: 'oklch(0.78 0.18 75)',          // Warm amber
-  amberDark: 'oklch(0.65 0.20 65)',
-  blue: 'oklch(0.55 0.20 250)',          // Deep blue
+  // Accents - Refined and professional
+  success: 'oklch(0.55 0.14 160)',      // Muted emerald
+  successLight: 'oklch(0.80 0.10 160)',
+  amber: 'oklch(0.72 0.12 75)',          // Muted warm amber
+  amberDark: 'oklch(0.58 0.14 65)',
+  blue: 'oklch(0.50 0.14 250)',          // Muted deep blue
 
   // Merchant colors - Distinct and recognizable
   coffee: 'oklch(0.45 0.12 50)',         // Rich brown

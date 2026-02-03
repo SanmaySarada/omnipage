@@ -14,8 +14,8 @@ interface IsometricSchoolProps {
 }
 
 /**
- * Isometric university building - Clean geometric design
- * Represents the school receiving tuition payment
+ * Isometric university building with clock tower
+ * Classic academic architecture - recognizable as educational institution
  */
 export function IsometricSchool({
   progress,
@@ -23,7 +23,6 @@ export function IsometricSchool({
   checkmarkRange = [0.5, 0.6],
   className = '',
 }: IsometricSchoolProps) {
-  // Fade in animation
   const opacity = useTransform(
     progress ?? ({ get: () => 1 } as MotionValue<number>),
     fadeInRange,
@@ -36,7 +35,6 @@ export function IsometricSchool({
     [20, 0]
   )
 
-  // Checkmark animation
   const checkmarkOpacity = useTransform(
     progress ?? ({ get: () => 1 } as MotionValue<number>),
     checkmarkRange,
@@ -56,185 +54,210 @@ export function IsometricSchool({
     >
       <div className="relative w-32 md:w-40 lg:w-48">
         <svg
-          viewBox="0 0 180 160"
+          viewBox="0 0 200 180"
           className="w-full h-auto"
-          aria-label="University building"
+          aria-label="University building with clock tower"
         >
           {/* Shadow ellipse */}
           <ellipse
-            cx="90"
-            cy="150"
-            rx="65"
-            ry="9"
+            cx="100"
+            cy="168"
+            rx="70"
+            ry="10"
             fill={ISO_COLORS.shadow}
           />
 
-          {/* Main building base - left wing */}
+          {/* Main building base - wide academic hall */}
+          {/* Left wing */}
           <polygon
-            points="20,130 20,70 60,50 60,110"
+            points="25,155 25,85 55,70 55,140"
             fill={ISO_COLORS.surfaceLeft}
           />
           <polygon
-            points="60,50 90,65 90,125 60,110"
+            points="55,70 85,85 85,155 55,140"
             fill={ISO_COLORS.surfaceRight}
           />
 
-          {/* Main building base - right wing */}
+          {/* Right wing */}
           <polygon
-            points="90,65 120,50 120,110 90,125"
+            points="115,85 145,70 145,140 115,155"
             fill={ISO_COLORS.surfaceLeft}
           />
           <polygon
-            points="120,50 160,70 160,130 120,110"
+            points="145,70 175,85 175,155 145,140"
             fill={ISO_COLORS.surfaceRight}
           />
 
-          {/* Central tower - left face */}
+          {/* Center section - connects wings */}
           <polygon
-            points="60,110 60,35 90,20 90,95"
+            points="55,140 55,100 100,80 100,120"
             fill={ISO_COLORS.surfaceLeft}
           />
-
-          {/* Central tower - right face */}
           <polygon
-            points="90,20 120,35 120,110 90,95"
+            points="100,80 145,100 145,140 100,120"
             fill={ISO_COLORS.surfaceRight}
           />
-
-          {/* Tower roof */}
           <polygon
-            points="90,20 120,35 90,50 60,35"
+            points="55,100 100,80 145,100 100,120"
             fill={ISO_COLORS.surfaceTop}
           />
 
-          {/* Spire */}
+          {/* Clock Tower - central academic landmark */}
           <polygon
-            points="90,5 95,20 85,20"
+            points="75,120 75,40 100,25 100,105"
+            fill={ISO_COLORS.surfaceLeft}
+          />
+          <polygon
+            points="100,25 125,40 125,120 100,105"
+            fill={ISO_COLORS.surfaceRight}
+          />
+
+          {/* Tower roof - peaked academic style */}
+          <polygon
+            points="100,25 125,40 100,55 75,40"
+            fill={ISO_COLORS.surfaceTop}
+          />
+
+          {/* Tower dome/cupola */}
+          <polygon
+            points="90,40 100,15 110,40 100,48"
+            fill={ISO_COLORS.primaryLight}
+          />
+          <polygon
+            points="100,15 110,40 100,48"
             fill={ISO_COLORS.primary}
           />
 
-          {/* Flag */}
-          <line
-            x1="90"
-            y1="5"
-            x2="90"
-            y2="0"
+          {/* Clock face - iconic academic symbol */}
+          <ellipse
+            cx="87"
+            cy="58"
+            rx="10"
+            ry="12"
+            fill="white"
             stroke={ISO_COLORS.primaryDark}
-            strokeWidth="1"
+            strokeWidth="1.5"
           />
-          <polygon
-            points="90,0 100,3 90,6"
-            fill={ISO_COLORS.primary}
+          {/* Clock hands */}
+          <line
+            x1="87"
+            y1="58"
+            x2="87"
+            y2="50"
+            stroke={ISO_COLORS.primaryDark}
+            strokeWidth="1.5"
+            strokeLinecap="round"
           />
-
-          {/* Tower windows - left side (2x3 grid) */}
-          {[0, 1].map((row) =>
-            [0, 1, 2].map((col) => (
-              <polygon
-                key={`tower-left-${row}-${col}`}
-                points={`
-                  ${66 + col * 8},${50 + row * 25 - col * 4}
-                  ${72 + col * 8},${47 + row * 25 - col * 4}
-                  ${72 + col * 8},${37 + row * 25 - col * 4}
-                  ${66 + col * 8},${40 + row * 25 - col * 4}
-                `}
-                fill={ISO_COLORS.primaryDark}
-                opacity="0.6"
-              />
-            ))
-          )}
-
-          {/* Tower windows - right side (2x3 grid) */}
-          {[0, 1].map((row) =>
-            [0, 1, 2].map((col) => (
-              <polygon
-                key={`tower-right-${row}-${col}`}
-                points={`
-                  ${96 + col * 8},${47 + row * 25 + col * 4}
-                  ${102 + col * 8},${50 + row * 25 + col * 4}
-                  ${102 + col * 8},${40 + row * 25 + col * 4}
-                  ${96 + col * 8},${37 + row * 25 + col * 4}
-                `}
-                fill={ISO_COLORS.primaryDark}
-                opacity="0.5"
-              />
-            ))
-          )}
-
-          {/* Left wing windows (2x2 grid) */}
-          {[0, 1].map((row) =>
-            [0, 1].map((col) => (
-              <polygon
-                key={`left-wing-${row}-${col}`}
-                points={`
-                  ${28 + col * 14},${85 + row * 20 - col * 7}
-                  ${36 + col * 14},${81 + row * 20 - col * 7}
-                  ${36 + col * 14},${71 + row * 20 - col * 7}
-                  ${28 + col * 14},${75 + row * 20 - col * 7}
-                `}
-                fill={ISO_COLORS.primaryDark}
-                opacity="0.6"
-              />
-            ))
-          )}
-
-          {/* Right wing windows (2x2 grid) */}
-          {[0, 1].map((row) =>
-            [0, 1].map((col) => (
-              <polygon
-                key={`right-wing-${row}-${col}`}
-                points={`
-                  ${128 + col * 14},${81 + row * 20 + col * 7}
-                  ${136 + col * 14},${85 + row * 20 + col * 7}
-                  ${136 + col * 14},${75 + row * 20 + col * 7}
-                  ${128 + col * 14},${71 + row * 20 + col * 7}
-                `}
-                fill={ISO_COLORS.primaryDark}
-                opacity="0.5"
-              />
-            ))
-          )}
-
-          {/* Entrance - center base */}
-          <polygon
-            points="80,125 90,120 100,125 90,130"
-            fill={ISO_COLORS.surfaceTop}
+          <line
+            x1="87"
+            y1="58"
+            x2="92"
+            y2="60"
+            stroke={ISO_COLORS.primaryDark}
+            strokeWidth="1.5"
+            strokeLinecap="round"
           />
-          <polygon
-            points="80,125 90,130 90,140 80,135"
-            fill={ISO_COLORS.surfaceLeft}
-          />
-          <polygon
-            points="90,130 100,125 100,135 90,140"
-            fill={ISO_COLORS.surfaceRight}
-          />
-
-          {/* Entrance door */}
-          <polygon
-            points="85,130 90,127 90,135 85,138"
+          {/* Clock center dot */}
+          <circle
+            cx="87"
+            cy="58"
+            r="1.5"
             fill={ISO_COLORS.primaryDark}
           />
+
+          {/* Tower windows below clock */}
           <polygon
-            points="90,127 95,130 95,138 90,135"
-            fill={ISO_COLORS.primary}
+            points="80,75 87,71 87,85 80,89"
+            fill={ISO_COLORS.primaryDark}
+            opacity="0.5"
+          />
+          <polygon
+            points="80,95 87,91 87,105 80,109"
+            fill={ISO_COLORS.primaryDark}
+            opacity="0.5"
+          />
+
+          {/* Left wing windows - arched style */}
+          {[0, 1].map((row) => (
+            <g key={`left-windows-${row}`}>
+              <polygon
+                points={`32,${100 + row * 25} 40,${96 + row * 25} 40,${108 + row * 25} 32,${112 + row * 25}`}
+                fill={ISO_COLORS.primaryDark}
+                opacity="0.5"
+              />
+              <polygon
+                points={`44,${93 + row * 25} 52,${89 + row * 25} 52,${101 + row * 25} 44,${105 + row * 25}`}
+                fill={ISO_COLORS.primaryDark}
+                opacity="0.5"
+              />
+            </g>
+          ))}
+
+          {/* Right wing windows */}
+          {[0, 1].map((row) => (
+            <g key={`right-windows-${row}`}>
+              <polygon
+                points={`148,${96 + row * 25} 156,${100 + row * 25} 156,${112 + row * 25} 148,${108 + row * 25}`}
+                fill={ISO_COLORS.primaryDark}
+                opacity="0.5"
+              />
+              <polygon
+                points={`160,${89 + row * 25} 168,${93 + row * 25} 168,${105 + row * 25} 160,${101 + row * 25}`}
+                fill={ISO_COLORS.primaryDark}
+                opacity="0.5"
+              />
+            </g>
+          ))}
+
+          {/* Grand entrance - columns suggest academic institution */}
+          {/* Entrance platform */}
+          <polygon
+            points="85,155 100,148 115,155 100,162"
+            fill={ISO_COLORS.surfaceTop}
+          />
+
+          {/* Left column */}
+          <polygon
+            points="88,148 92,146 92,130 88,132"
+            fill={ISO_COLORS.surfaceLeft}
+          />
+          <polygon
+            points="92,146 96,148 96,132 92,130"
+            fill={ISO_COLORS.surfaceRight}
+          />
+
+          {/* Right column */}
+          <polygon
+            points="104,148 108,146 108,130 104,132"
+            fill={ISO_COLORS.surfaceLeft}
+          />
+          <polygon
+            points="108,146 112,148 112,132 108,130"
+            fill={ISO_COLORS.surfaceRight}
+          />
+
+          {/* Door between columns */}
+          <polygon
+            points="93,148 100,144 107,148 100,152"
+            fill={ISO_COLORS.primaryDark}
           />
 
           {/* Steps */}
           <polygon
-            points="75,140 105,140 90,132"
+            points="80,162 100,154 120,162 100,170"
             fill={ISO_COLORS.surfaceTop}
           />
           <polygon
-            points="75,140 90,132 90,135 75,143"
+            points="80,162 100,170 100,173 80,165"
             fill={ISO_COLORS.surfaceLeft}
           />
           <polygon
-            points="90,132 105,140 105,143 90,135"
+            points="100,170 120,162 120,165 100,173"
             fill={ISO_COLORS.surfaceRight}
           />
         </svg>
 
-        {/* Checkmark badge - positioned on illustration */}
+        {/* Checkmark badge */}
         <motion.div
           className="absolute -top-1 -right-1 md:top-0 md:right-0"
           style={{

@@ -6,7 +6,7 @@ import { IsometricBank } from './isometric-bank'
 import { IsometricSchool } from './isometric-school'
 import { AchFlowPath } from './ach-flow-path'
 import { RewardCounter } from './reward-counter'
-import { EXAMPLE_DATA } from '../shared/constants'
+import { EXAMPLE_DATA, ISO_COLORS } from '../shared/constants'
 
 /**
  * Section 1: Earn on Every Tuition Payment
@@ -77,23 +77,26 @@ export function TuitionRewards() {
             {/* Mobile: vertical simplified flow */}
             <div className="lg:hidden flex flex-col items-center gap-2">
               <motion.div
-                className="w-0.5 h-16 bg-gradient-to-b from-primary to-green-500"
+                className="w-0.5 h-16"
                 style={{
+                  background: `linear-gradient(to bottom, ${ISO_COLORS.primary}, ${ISO_COLORS.blue})`,
                   scaleY: useTransform(animationProgress, [0.25, 0.55], [0, 1]),
                   transformOrigin: 'top',
                 }}
               />
               <motion.span
-                className="text-xs font-medium text-primary px-2 py-1 bg-primary/10 rounded"
+                className="text-xs font-medium px-3 py-1.5 rounded-md text-white"
                 style={{
+                  backgroundColor: ISO_COLORS.primary,
                   opacity: useTransform(animationProgress, [0.35, 0.45], [0, 1]),
                 }}
               >
                 ACH Transfer
               </motion.span>
               <motion.div
-                className="w-0.5 h-16 bg-gradient-to-b from-green-500 to-green-600"
+                className="w-0.5 h-16"
                 style={{
+                  background: `linear-gradient(to bottom, ${ISO_COLORS.blue}, ${ISO_COLORS.success})`,
                   scaleY: useTransform(animationProgress, [0.45, 0.55], [0, 1]),
                   transformOrigin: 'top',
                 }}
@@ -112,7 +115,7 @@ export function TuitionRewards() {
         </div>
 
         {/* Reward counter */}
-        <div className="mt-12 md:mt-16">
+        <div className="mt-12 md:mt-16 flex justify-center">
           <RewardCounter
             progress={animationProgress}
             counterRange={[0.65, 0.95]}
