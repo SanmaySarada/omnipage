@@ -1,7 +1,6 @@
 'use client'
 
 import { motion, MotionValue, useTransform } from 'framer-motion'
-import Image from 'next/image'
 import { ISO_COLORS } from '../shared/constants'
 
 interface CampusBuildingProps {
@@ -12,7 +11,7 @@ interface CampusBuildingProps {
 }
 
 /**
- * Campus building illustration for map center - Professional Storyset design
+ * Isometric campus building for map center - Clean geometric design
  */
 export function CampusBuilding({
   progress,
@@ -37,14 +36,140 @@ export function CampusBuilding({
       style={{ opacity, scale }}
     >
       <div className="relative w-20 md:w-24 lg:w-28">
-        <Image
-          src="/illustrations/buildings/campus.svg"
-          alt="Campus building"
-          width={112}
-          height={112}
+        <svg
+          viewBox="0 0 100 100"
           className="w-full h-auto"
-          priority
-        />
+          aria-label="Campus building"
+        >
+          {/* Shadow ellipse */}
+          <ellipse
+            cx="50"
+            cy="92"
+            rx="35"
+            ry="6"
+            fill={ISO_COLORS.shadow}
+          />
+
+          {/* Main building body - left face */}
+          <polygon
+            points="20,85 20,50 50,35 50,70"
+            fill={ISO_COLORS.surfaceLeft}
+          />
+
+          {/* Main building body - right face */}
+          <polygon
+            points="50,35 80,50 80,85 50,70"
+            fill={ISO_COLORS.surfaceRight}
+          />
+
+          {/* Building roof/top */}
+          <polygon
+            points="50,35 80,50 50,65 20,50"
+            fill={ISO_COLORS.surfaceTop}
+          />
+
+          {/* Tower - left face */}
+          <polygon
+            points="40,65 40,25 50,20 50,60"
+            fill={ISO_COLORS.surfaceLeft}
+          />
+
+          {/* Tower - right face */}
+          <polygon
+            points="50,20 60,25 60,65 50,60"
+            fill={ISO_COLORS.surfaceRight}
+          />
+
+          {/* Tower roof */}
+          <polygon
+            points="50,20 60,25 50,30 40,25"
+            fill={ISO_COLORS.surfaceTop}
+          />
+
+          {/* Spire */}
+          <polygon
+            points="50,8 53,20 47,20"
+            fill={ISO_COLORS.primary}
+          />
+
+          {/* Tower windows - left side (2 windows) */}
+          {[0, 1].map((i) => (
+            <polygon
+              key={`tower-left-${i}`}
+              points={`43,${35 + i * 15} 48,${32 + i * 15} 48,${26 + i * 15} 43,${29 + i * 15}`}
+              fill={ISO_COLORS.primaryDark}
+              opacity="0.6"
+            />
+          ))}
+
+          {/* Tower windows - right side (2 windows) */}
+          {[0, 1].map((i) => (
+            <polygon
+              key={`tower-right-${i}`}
+              points={`52,${32 + i * 15} 57,${35 + i * 15} 57,${29 + i * 15} 52,${26 + i * 15}`}
+              fill={ISO_COLORS.primaryDark}
+              opacity="0.5"
+            />
+          ))}
+
+          {/* Main building windows - left (2x2 grid) */}
+          {[0, 1].map((row) =>
+            [0, 1].map((col) => (
+              <polygon
+                key={`main-left-${row}-${col}`}
+                points={`
+                  ${25 + col * 10},${60 + row * 12 - col * 5}
+                  ${31 + col * 10},${57 + row * 12 - col * 5}
+                  ${31 + col * 10},${52 + row * 12 - col * 5}
+                  ${25 + col * 10},${55 + row * 12 - col * 5}
+                `}
+                fill={ISO_COLORS.primaryDark}
+                opacity="0.6"
+              />
+            ))
+          )}
+
+          {/* Main building windows - right (2x2 grid) */}
+          {[0, 1].map((row) =>
+            [0, 1].map((col) => (
+              <polygon
+                key={`main-right-${row}-${col}`}
+                points={`
+                  ${55 + col * 10},${57 + row * 12 + col * 5}
+                  ${61 + col * 10},${60 + row * 12 + col * 5}
+                  ${61 + col * 10},${55 + row * 12 + col * 5}
+                  ${55 + col * 10},${52 + row * 12 + col * 5}
+                `}
+                fill={ISO_COLORS.primaryDark}
+                opacity="0.5"
+              />
+            ))
+          )}
+
+          {/* Entrance door - center */}
+          <polygon
+            points="45,82 50,79 50,70 45,73"
+            fill={ISO_COLORS.primaryDark}
+          />
+          <polygon
+            points="50,79 55,82 55,73 50,70"
+            fill={ISO_COLORS.primary}
+          />
+
+          {/* Steps */}
+          <polygon
+            points="42,85 58,85 50,80"
+            fill={ISO_COLORS.surfaceTop}
+          />
+          <polygon
+            points="42,85 50,80 50,82 42,87"
+            fill={ISO_COLORS.surfaceLeft}
+          />
+          <polygon
+            points="50,80 58,85 58,87 50,82"
+            fill={ISO_COLORS.surfaceRight}
+          />
+        </svg>
       </div>
 
       {/* Campus label */}
