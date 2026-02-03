@@ -117,21 +117,19 @@
   --color-sidebar-ring: var(--sidebar-ring);
 }
 
-/* Hero gradient mesh - sophisticated drift animation */
+/* Hero gradient mesh - subtle drift animation */
 .hero-gradient {
   position: absolute;
   inset: 0;
   z-index: -1;
   background: linear-gradient(
-    -45deg,
-    oklch(0.94 0.04 280),
-    oklch(0.96 0.03 250),
-    oklch(0.98 0.02 270),
-    oklch(0.95 0.035 200),
-    oklch(0.97 0.025 290)
+    135deg,
+    oklch(0.98 0.01 270),
+    oklch(0.96 0.02 265),
+    oklch(0.97 0.015 275)
   );
-  background-size: 500% 500%;
-  animation: gradient-drift 25s ease infinite;
+  background-size: 200% 200%;
+  animation: gradient-drift 30s ease infinite;
 }
 
 @keyframes gradient-drift {
