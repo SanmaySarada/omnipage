@@ -14,7 +14,7 @@ export function HeroContent() {
     >
       <motion.h1
         variants={heroItemVariants}
-        className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-foreground"
+        className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-foreground"
       >
         Earn Rewards on Your{' '}
         <span className="text-primary">Biggest Expense</span>
