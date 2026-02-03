@@ -52,7 +52,7 @@ export function DiscoverRewards() {
             y: useTransform(animationProgress, [0, 0.1], [30, 0]),
           }}
         >
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
             Discover Local Rewards
           </h2>
           <p className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto">
