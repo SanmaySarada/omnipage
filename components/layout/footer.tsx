@@ -3,7 +3,8 @@ import Link from 'next/link'
 const footerLinks = {
   nav: [
     { href: '#how-it-works', label: 'How It Works' },
-    { href: '#features', label: 'Features' },
+    { href: '#calculator', label: 'Calculator' },
+    { href: '#benefits', label: 'Benefits' },
     { href: '#faq', label: 'FAQ' },
   ],
 }
@@ -15,7 +16,7 @@ export function Footer() {
         <div className="grid gap-8 md:grid-cols-2">
           {/* Logo & Tagline */}
           <div>
-            <Link href="/" className="font-bold text-xl">
+            <Link href="/" className="font-display font-bold text-xl tracking-tight">
               Omni Card
             </Link>
             <p className="mt-2 text-sm text-muted-foreground max-w-xs">
@@ -25,7 +26,7 @@ export function Footer() {
 
           {/* Navigation */}
           <div>
-            <h3 className="font-medium mb-4">Navigation</h3>
+            <h3 className="font-display font-semibold mb-4">Navigation</h3>
             <ul className="space-y-2">
               {footerLinks.nav.map((link) => (
                 <li key={link.href}>

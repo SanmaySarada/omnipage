@@ -9,7 +9,7 @@ const CARD_HEIGHT = 2.125
 const CARD_DEPTH = 0.05
 
 /** Scale the front face image so it's larger than the 3D body and covers it */
-const FACE_OVERHANG = 3.6
+const FACE_OVERHANG = 3.15
 
 
 /**

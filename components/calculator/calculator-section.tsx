@@ -63,7 +63,7 @@ export function CalculatorSection() {
       <div className="max-w-3xl mx-auto px-4">
         {/* Header */}
         <ScrollReveal className="text-center mb-8">
-          <h2 className="font-display text-2xl sm:text-3xl font-bold text-foreground mb-2">
+          <h2 className="font-display text-2xl sm:text-3xl font-bold tracking-tight text-foreground mb-2">
             Calculate Your Rewards
           </h2>
           <p className="text-muted-foreground">
