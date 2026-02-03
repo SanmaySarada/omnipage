@@ -120,12 +120,15 @@ Progress: [===============.....] 75% (07.2-01, 07.2-02, 07.2-03 complete, 07.2-0
 | 07-09 | Source stagger 0.05 | Creates cascade reveal effect |
 | 07-09 | Tuition card perspective | perspective(1000px) rotateY(-5deg) rotateX(5deg) |
 | 07-09 | Loop arc dasharray | 120 offset -> 30 draws 3/4 arc for cycle |
-| 07.2-03 | Primary saturation 0.16 | More refined, mature fintech aesthetic |
-| 07.2-03 | Primary lightness 0.45 | Deeper for sophistication, maintains contrast |
-| 07.2-03 | Hero gradient 3 stops | Simpler, cleaner, slower (30s) animation |
+| 07.2-01 | Geometric SVGs over external files | Inline SVGs use ISO_COLORS directly for consistent theming |
+| 07.2-01 | Classical bank facade | Columns, pediment, steps, dollar sign for institutional feel |
+| 07.2-01 | Window grids via array map | Clean code pattern for repeated isometric parallelograms |
 | 07.2-02 | Geist display font | Premium typography hierarchy with Inter body |
 | 07.2-02 | font-display utility class | Apply to headlines and metric values |
 | 07.2-02 | Geist + Inter pairing | Fintech aesthetic (follows Bilt, Mercury pattern) |
+| 07.2-03 | Primary saturation 0.16 | More refined, mature fintech aesthetic |
+| 07.2-03 | Primary lightness 0.45 | Deeper for sophistication, maintains contrast |
+| 07.2-03 | Hero gradient 3 stops | Simpler, cleaner, slower (30s) animation |
 
 ### Pending Todos
 
@@ -138,5 +141,5 @@ Progress: [===============.....] 75% (07.2-01, 07.2-02, 07.2-03 complete, 07.2-0
 ## Session Continuity
 
 Last session: 2026-02-03
-Stopped at: Completed 07.2-03-PLAN.md (Color Palette Refinement)
+Stopped at: Completed 07.2-01-PLAN.md (Remove Storyset, Restore Geometric SVGs)
 Resume file: None - ready for 07.2-04
