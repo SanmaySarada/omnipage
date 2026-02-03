@@ -1,6 +1,6 @@
 import { HeroSection } from '@/components/hero/hero-section'
 import { HowYouEarnSection } from '@/components/how-you-earn'
-import { AudienceTabs, FAQSection } from '@/components/content-sections'
+import { AudienceTabs, FAQSection, SecurityAccordion } from '@/components/content-sections'
 import { CalculatorSection } from '@/components/calculator'
 
 export default function Page() {
@@ -15,6 +15,10 @@ export default function Page() {
       <AudienceTabs />
 
       <FAQSection />
+
+      <section className="max-w-3xl mx-auto px-4 pb-24">
+        <SecurityAccordion />
+      </section>
     </>
   )
 }

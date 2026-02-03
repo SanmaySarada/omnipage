@@ -9,8 +9,8 @@ import { SpendSlider } from './spend-slider'
 import { TrendingUp } from 'lucide-react'
 
 export function CalculatorSection() {
-  const [tuition, setTuition] = useState(30000)
-  const [monthlySpend, setMonthlySpend] = useState(500)
+  const [tuition, setTuition] = useState(9000)
+  const [monthlySpend, setMonthlySpend] = useState(300)
 
   const results = useMemo(() => {
     const annualSpend = monthlySpend * 12
