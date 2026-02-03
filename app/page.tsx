@@ -1,12 +1,12 @@
 import { HeroSection } from '@/components/hero/hero-section'
-import { HowItWorksSection } from '@/components/how-it-works/how-it-works-section'
+import { HowYouEarnSection } from '@/components/how-you-earn'
 
 export default function Page() {
   return (
     <>
       <HeroSection />
 
-      <HowItWorksSection />
+      <HowYouEarnSection />
 
       {/* Features */}
       <section id="features" className="min-h-screen flex items-center justify-center">
