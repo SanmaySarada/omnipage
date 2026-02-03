@@ -11,7 +11,7 @@ import { RewardsLoop } from './rewards-loop'
  */
 function HowYouEarnStatic() {
   return (
-    <div className="py-16 md:py-24 container mx-auto px-4">
+    <div className="pt-16 pb-8 md:pt-24 md:pb-12 container mx-auto px-4">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
         {/* Left column */}
         <div className="space-y-6 lg:space-y-8">
@@ -65,7 +65,7 @@ export function HowYouEarnSection() {
   }
 
   return (
-    <div id="how-it-works" className="py-16 md:py-24">
+    <div id="how-it-works" className="pt-16 pb-8 md:pt-24 md:pb-12">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
           {/* Left column */}
