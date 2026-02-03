@@ -10,9 +10,9 @@ See: .planning/PROJECT.md
 ## Current Position
 
 Phase: 9 of 10 (Interactive Features)
-Plan: 2 of 3 plans complete
+Plan: 2 of 3 plans complete (09-01, 09-02)
 Status: In progress
-Last activity: 2026-02-03 - Completed 09-02 FAQ and Security Accordion
+Last activity: 2026-02-03 - Completed 09-01 Calculator Section
 
 Progress: [========================] ~85% (09-01, 09-02 complete, 09-03 pending)
 
@@ -55,7 +55,7 @@ Progress: [========================] ~85% (09-01, 09-02 complete, 09-03 pending)
 | 07-how-you-earn v2 | 5/5 | 27min | 5.4min |
 | 07.2-design-overhaul | 4/4 | 11min | 2.75min |
 | 08-content-sections | 4/4 | 7min | 1.75min |
-| 09-interactive-features | 2/3 | 5min | 2.5min |
+| 09-interactive-features | 2/3 | 11min | 5.5min |
 
 ## Accumulated Context
 
@@ -148,6 +148,10 @@ Progress: [========================] ~85% (09-01, 09-02 complete, 09-03 pending)
 | 08-04 | Barrel export at content-sections root | Single import point for all content sections |
 | 09-02 | Custom FAQAccordion over shadcn | Framer Motion height:'auto' provides smoother animation |
 | 09-02 | Security 2x2 grid layout | Clean layout for 4 compliance items |
+| 09-01 | type=text inputMode=numeric for currency | Avoid scroll-wheel issues, support formatting |
+| 09-01 | Clamp input values on change and blur | Robust validation for slider inputs |
+| 09-01 | Reuse existing Odometer components | Consistency with how-you-earn section |
+| 09-01 | Lift state to CalculatorSection | Slider-results synchronization pattern |
 
 ### Pending Todos
 
@@ -160,5 +164,5 @@ Progress: [========================] ~85% (09-01, 09-02 complete, 09-03 pending)
 ## Session Continuity
 
 Last session: 2026-02-03
-Stopped at: Completed 09-02-PLAN.md (FAQ and Security Accordion)
+Stopped at: Completed 09-01-PLAN.md (Calculator Section)
 Resume file: None - ready for 09-03 Page Integration
