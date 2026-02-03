@@ -91,7 +91,7 @@ export function DiscoverRewards() {
               multiplier={5}
               Icon={Coffee}
               progress={animationProgress}
-              appearRange={[0.75, 0.85]}
+              appearRange={[0.5, 0.6]}
             />
           </div>
         </div>
@@ -100,8 +100,8 @@ export function DiscoverRewards() {
         <motion.div
           className="mt-12 grid grid-cols-3 gap-4 max-w-md mx-auto text-center"
           style={{
-            opacity: useTransform(animationProgress, [0.85, 0.95], [0, 1]),
-            y: useTransform(animationProgress, [0.85, 0.95], [20, 0]),
+            opacity: useTransform(animationProgress, [0.6, 0.7], [0, 1]),
+            y: useTransform(animationProgress, [0.6, 0.7], [20, 0]),
           }}
         >
           <div>

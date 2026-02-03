@@ -63,7 +63,7 @@ export function ThresholdBadge({
         {/* Badge container */}
         <motion.div
           className={`
-            relative px-4 py-2 rounded-xl border-2 font-bold text-lg
+            relative px-3 py-1.5 rounded-lg border-2 font-bold text-base
             ${isActive
               ? 'bg-primary text-primary-foreground border-primary'
               : 'bg-background border-border'
