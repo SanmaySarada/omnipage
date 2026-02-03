@@ -15,7 +15,7 @@ export function HeroCard3D() {
       <LoadingFallback />
       <View className="absolute inset-0 pointer-events-auto">
         {/* Camera pulled back so the full card fits in view when tilted */}
-        <perspectiveCamera makeDefault position={[0, 0, 100]} fov={50} />
+        <perspectiveCamera makeDefault position={[0, 0, 500]} fov={50} />
         <Suspense fallback={null}>
           <ambientLight intensity={0.3} />
           <directionalLight position={[5, 5, 5]} intensity={0.8} />

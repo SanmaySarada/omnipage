@@ -11,6 +11,7 @@ const CARD_DEPTH = 0.05
 /** Scale the front face image so it's larger than the 3D body and covers it */
 const FACE_OVERHANG = 3.6
 
+
 /**
  * CardModel - 3D credit card with custom front face image and metallic body.
  * Front face is scaled larger than the body so the card image covers the 3D thing.
