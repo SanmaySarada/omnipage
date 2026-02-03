@@ -32,12 +32,12 @@ export function TuitionRewards() {
   return (
     <section
       ref={sectionRef}
-      className="min-h-screen py-24 md:py-32 flex flex-col items-center justify-center relative overflow-hidden"
+      className="bg-card rounded-xl p-6 md:p-8 lg:p-10 shadow-md border border-border/50 relative overflow-hidden"
     >
       {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-primary/5 to-background pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-transparent pointer-events-none" />
 
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="relative z-10">
         {/* Header */}
         <motion.div
           className="text-center mb-12 md:mb-16"
@@ -125,3 +125,5 @@ export function TuitionRewards() {
     </section>
   )
 }
+
+export default TuitionRewards

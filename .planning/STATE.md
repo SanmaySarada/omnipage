@@ -5,16 +5,16 @@
 See: .planning/PROJECT.md
 
 **Core value:** Visitors immediately understand that Omni unlocks rewards on tuition without costing schools anything - and trust the page enough to join the waitlist.
-**Current focus:** Phase 8 Content Sections - Building additional page sections
+**Current focus:** Phase 9 - Calculator and FAQ sections
 
 ## Current Position
 
-Phase: 8 of 10 (Content Sections)
-Plan: 3 of 4 plans complete
-Status: In Progress
-Last activity: 2026-02-03 - Completed 08-03 Discovery Preview
+Phase: 8 of 10 (Content Sections) - COMPLETE
+Plan: 4 of 4 plans complete
+Status: Phase Complete
+Last activity: 2026-02-03 - Completed 08-04 Content Section Integration
 
-Progress: [===============-----] 75% (08-01, 08-02, 08-03 complete; 08-04 remaining)
+Progress: [====================] 100% (08-01, 08-02, 08-03, 08-04 complete)
 
 **Note:** Phase 7.1 (Storyset illustrations) was attempted but SUPERSEDED. The Storyset illustrations contained cartoon characters and playful elements inappropriate for fintech. Phase 7.2 addresses this comprehensively.
 
@@ -54,7 +54,7 @@ Progress: [===============-----] 75% (08-01, 08-02, 08-03 complete; 08-04 remain
 | 07-how-it-works v1 | 4/4 | 7min | 1.75min |
 | 07-how-you-earn v2 | 5/5 | 27min | 5.4min |
 | 07.2-design-overhaul | 4/4 | 11min | 2.75min |
-| 08-content-sections | 3/4 | 6min | 2min |
+| 08-content-sections | 4/4 | 7min | 1.75min |
 
 ## Accumulated Context
 
@@ -143,6 +143,8 @@ Progress: [===============-----] 75% (08-01, 08-02, 08-03 complete; 08-04 remain
 | 08-03 | Static notification over MotionValue | Simpler for preview context, no scroll dependency |
 | 08-03 | iPhone 14/15 aspect ratio (9/19.5) | Realistic phone mockup dimensions |
 | 08-03 | Pure CSS phone frame | No external dependencies for device mockup |
+| 08-04 | Section order follows user journey | Hero > HowYouEarn > FeatureGrid > AudienceTabs > DiscoveryPreview > Calculator > FAQ |
+| 08-04 | Barrel export at content-sections root | Single import point for all content sections |
 
 ### Pending Todos
 
@@ -155,5 +157,5 @@ Progress: [===============-----] 75% (08-01, 08-02, 08-03 complete; 08-04 remain
 ## Session Continuity
 
 Last session: 2026-02-03
-Stopped at: Completed 08-03-PLAN.md (Discovery Preview)
-Resume file: None - continue with 08-04
+Stopped at: Completed 08-04-PLAN.md (Content Section Integration) - Phase 8 COMPLETE
+Resume file: None - ready for Phase 9
