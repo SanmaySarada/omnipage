@@ -1,9 +1,9 @@
 // Isometric color palette - Premium fintech aesthetic
 export const ISO_COLORS = {
-  // Primary - Deep indigo with presence
-  primary: 'oklch(0.50 0.22 270)',
-  primaryLight: 'oklch(0.70 0.18 270)',
-  primaryDark: 'oklch(0.35 0.20 270)',
+  // Primary - Deeper indigo with refined saturation
+  primary: 'oklch(0.45 0.16 270)',
+  primaryLight: 'oklch(0.60 0.14 270)',
+  primaryDark: 'oklch(0.32 0.14 270)',
 
   // Surfaces for isometric faces - Warm neutrals with depth
   surfaceTop: 'oklch(0.97 0.01 250)',
@@ -20,7 +20,7 @@ export const ISO_COLORS = {
 
   // Merchant colors - Distinct and recognizable
   coffee: 'oklch(0.45 0.12 50)',         // Rich brown
-  books: 'oklch(0.50 0.22 270)',         // Primary indigo
+  books: 'oklch(0.45 0.16 270)',         // Primary indigo - refined
   food: 'oklch(0.60 0.22 30)',           // Warm coral
   retail: 'oklch(0.55 0.18 230)',        // Steel blue
 
