@@ -10,11 +10,11 @@ See: .planning/PROJECT.md
 ## Current Position
 
 Phase: 7 of 10 (How You Earn v2 Redesign)
-Plan: 0 of 5 new plans complete
-Status: Redesign planned, ready for execution
-Last activity: 2026-02-02 - Created v2 plans for complete How You Earn redesign
+Plan: 1 of 5 new plans complete
+Status: In progress - infrastructure complete
+Last activity: 2026-02-02 - Completed 07-05-PLAN.md (cleanup + infrastructure)
 
-Progress: [################---] 80% (Phase 7 v1 deprecated)
+Progress: [#################--] 85% (07-05 complete, 4 section plans remaining)
 
 ## Phase 7 Redesign
 
@@ -50,7 +50,7 @@ Progress: [################---] 80% (Phase 7 v1 deprecated)
 | 05-3d-infrastructure | 3/3 | 6min | 2min |
 | 06-3d-card | 3/3 | 8min | 2.7min |
 | 07-how-it-works v1 | 4/4 | 7min | 1.75min |
-| 07-how-you-earn v2 | 0/5 | - | - |
+| 07-how-you-earn v2 | 1/5 | 3min | 3min |
 
 ## Accumulated Context
 
@@ -101,6 +101,9 @@ Progress: [################---] 80% (Phase 7 v1 deprecated)
 | 07-v2 | Scroll-triggered (not interactive) | Consistent experience, easier to implement |
 | 07-v2 | Delete old implementation | Complete redesign, not incremental |
 | 07-v2 | Framer Motion + Rive/Lottie | Code-first with optional enhancements |
+| 07-05 | ScrollSection render prop pattern | Children receive MotionValue for scroll progress |
+| 07-05 | Generic useScrollTransform | Type-safe for number[] or string[] outputs |
+| 07-05 | Isometric 30-degree projection | toIsometric(x,y,z) for coordinate transforms |
 
 ### Pending Todos
 
@@ -113,5 +116,5 @@ Progress: [################---] 80% (Phase 7 v1 deprecated)
 ## Session Continuity
 
 Last session: 2026-02-02
-Stopped at: Created Phase 7 v2 redesign plans (07-05 through 07-09)
-Resume file: None - ready to execute `/gsd:execute-phase 7`
+Stopped at: Completed 07-05-PLAN.md
+Resume file: None - ready for 07-06 (Tuition Rewards section)
