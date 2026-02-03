@@ -18,7 +18,7 @@ function MetricCard({ value, label }: MetricCardProps) {
       className="bg-card rounded-xl p-6 shadow-sm border cursor-default"
       style={{ willChange: 'transform' }}
     >
-      <div className="text-2xl sm:text-3xl font-bold text-primary">{value}</div>
+      <div className="font-display text-2xl sm:text-3xl font-bold text-primary">{value}</div>
       <p className="text-muted-foreground text-sm mt-1">{label}</p>
     </motion.div>
   )
