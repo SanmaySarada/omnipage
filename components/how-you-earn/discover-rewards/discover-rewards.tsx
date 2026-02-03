@@ -52,7 +52,7 @@ export function DiscoverRewards() {
             y: useTransform(animationProgress, [0, 0.1], [30, 0]),
           }}
         >
-          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
             Discover Local Rewards
           </h2>
           <p className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto">
@@ -105,11 +105,11 @@ export function DiscoverRewards() {
           }}
         >
           <div>
-            <div className="text-2xl font-bold text-primary">50+</div>
+            <div className="font-display text-2xl font-bold text-primary">50+</div>
             <div className="text-xs text-muted-foreground">Merchants</div>
           </div>
           <div>
-            <div className="text-2xl font-bold text-accent">3x-10x</div>
+            <div className="font-display text-2xl font-bold text-accent">3x-10x</div>
             <div className="text-xs text-muted-foreground">Points</div>
           </div>
           <div>

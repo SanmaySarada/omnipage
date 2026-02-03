@@ -18,9 +18,9 @@ export function AudienceTabs() {
   const [activeTab, setActiveTab] = useState<TabId>(tabs[0].id)
 
   return (
-    <section className="max-w-6xl mx-auto px-4 py-20 sm:py-24">
+    <section id="benefits" className="max-w-6xl mx-auto px-4 py-20 sm:py-24">
       <ScrollReveal>
-        <h2 className="font-display text-3xl sm:text-4xl font-bold text-center mb-4">
+        <h2 className="font-display text-3xl sm:text-4xl font-bold tracking-tight text-center mb-4">
           Who Benefits?
         </h2>
         <p className="text-muted-foreground text-lg text-center max-w-2xl mx-auto mb-12">

@@ -14,7 +14,7 @@ export function HeroContent() {
     >
       <motion.h1
         variants={heroItemVariants}
-        className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-foreground"
+        className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-[-0.02em] text-foreground leading-[1.1]"
       >
         Earn Rewards on Your{' '}
         <span className="text-primary">Biggest Expense</span>
@@ -22,7 +22,7 @@ export function HeroContent() {
 
       <motion.p
         variants={heroItemVariants}
-        className="mt-6 text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto"
+        className="mt-6 text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed font-medium"
       >
         Pay tuition through the Omni platform. Earn points on tuition.
         Maximize rewards as a student.

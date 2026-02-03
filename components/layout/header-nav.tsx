@@ -11,8 +11,8 @@ import { navVariants, navTransition } from '@/lib/animation-variants'
 
 const navItems = [
   { href: '#how-it-works', label: 'How It Works' },
-  { href: '#features', label: 'Features' },
   { href: '#calculator', label: 'Calculator' },
+  { href: '#benefits', label: 'Benefits' },
   { href: '#faq', label: 'FAQ' },
 ]
 
@@ -39,7 +39,7 @@ export function HeaderNav() {
     >
       <div className="container flex h-16 items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="font-bold text-xl">
+        <Link href="/" className="font-display font-bold text-xl tracking-tight">
           Omni
         </Link>
 

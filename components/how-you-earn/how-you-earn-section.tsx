@@ -16,14 +16,14 @@ function HowYouEarnStatic() {
         {/* Left column */}
         <div className="space-y-6 lg:space-y-8">
           <section className="bg-card rounded-xl p-8 shadow-md border border-border/50">
-            <h2 className="text-2xl font-bold mb-4">Earn on Every Tuition Payment</h2>
+            <h2 className="font-display text-2xl font-bold tracking-tight mb-4">Earn on Every Tuition Payment</h2>
             <p className="text-muted-foreground">
               Pay your (e.g.) $25,000 tuition through Omni. We handle the ACH transfer
               to your school — you earn up to 1% back. That's $250 in rewards.
             </p>
           </section>
           <section className="bg-card rounded-xl p-8 shadow-md border border-border/50">
-            <h2 className="text-2xl font-bold mb-4">Discover Local Rewards</h2>
+            <h2 className="font-display text-2xl font-bold tracking-tight mb-4">Discover Local Rewards</h2>
             <p className="text-muted-foreground">
               Find participating merchants near campus through the Omni app.
               Earn 3x to 10x points at select locations.
@@ -33,14 +33,14 @@ function HowYouEarnStatic() {
         {/* Right column - staggered */}
         <div className="space-y-6 lg:space-y-8 lg:pt-48">
           <section className="bg-card rounded-xl p-8 shadow-md border border-border/50">
-            <h2 className="text-2xl font-bold mb-4">Unlock Better Tuition Rates</h2>
+            <h2 className="font-display text-2xl font-bold tracking-tight mb-4">Unlock Better Tuition Rates</h2>
             <p className="text-muted-foreground">
               Use your Omni card for everyday purchases. Spend 20% of tuition to
               unlock 0.5% back. Spend 40% to unlock 1.0% back.
             </p>
           </section>
           <section className="bg-card rounded-xl p-8 shadow-md border border-border/50">
-            <h2 className="text-2xl font-bold mb-4">Redeem & Repeat</h2>
+            <h2 className="font-display text-2xl font-bold tracking-tight mb-4">Redeem & Repeat</h2>
             <p className="text-muted-foreground">
               Your points work toward what matters most — reducing your next
               tuition bill. Then earn more the following semester.

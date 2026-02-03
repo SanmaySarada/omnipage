@@ -5,7 +5,7 @@ export function FAQSection() {
   return (
     <section id="faq" className="max-w-3xl mx-auto px-4 pt-12 sm:pt-16 pb-4">
       <ScrollReveal className="text-center mb-12">
-        <h2 className="font-display text-3xl sm:text-4xl font-bold mb-4">
+        <h2 className="font-display text-3xl sm:text-4xl font-bold tracking-tight mb-4">
           Frequently Asked Questions
         </h2>
         <p className="text-muted-foreground text-lg">
