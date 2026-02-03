@@ -223,10 +223,10 @@ Plans (v2 redesign):
 **Plans:** 4 plans in 2 waves
 
 Plans:
-- [ ] 08-01-PLAN.md — Feature Grid with 6 accessible animated cards (Wave 1)
-- [ ] 08-02-PLAN.md — Audience Tabs with animated indicator and crossfade (Wave 1)
-- [ ] 08-03-PLAN.md — Discovery Preview with phone mockup and notification (Wave 1)
-- [ ] 08-04-PLAN.md — Page integration and verification (Wave 2)
+- [x] 08-01-PLAN.md — Feature Grid with 6 accessible animated cards (Wave 1)
+- [x] 08-02-PLAN.md — Audience Tabs with animated indicator and crossfade (Wave 1)
+- [x] 08-03-PLAN.md — Discovery Preview with phone mockup and notification (Wave 1)
+- [x] 08-04-PLAN.md — Page integration and verification (Wave 2)
 
 ---
 
@@ -244,7 +244,12 @@ Plans:
 5. User can expand/collapse FAQ accordion items with smooth height animation
 6. User can expand security section to see compliance details
 
-**Plans:** (created by /gsd:plan-phase)
+**Plans:** 3 plans in 2 waves
+
+Plans:
+- [ ] 09-01-PLAN.md — Calculator section with sliders, animated results, and CTA (Wave 1)
+- [ ] 09-02-PLAN.md — FAQ accordion with height animation and security accordion (Wave 1)
+- [ ] 09-03-PLAN.md — Page integration and verification (Wave 2)
 
 ---
 
@@ -279,7 +284,7 @@ Plans:
 | 7 - How You Earn | Complete | 2026-02-03 |
 | 7.1 - Professional Illustrations | SUPERSEDED | - |
 | 7.2 - Design System Overhaul | Complete | 2026-02-03 |
-| 8 - Content Sections | Not started | - |
+| 8 - Content Sections | Complete | 2026-02-03 |
 | 9 - Interactive Features | Not started | - |
 | 10 - Final CTA & Polish | Not started | - |
 
