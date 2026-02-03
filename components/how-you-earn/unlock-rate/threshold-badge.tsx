@@ -2,12 +2,13 @@
 
 import { motion, MotionValue, useTransform } from 'framer-motion'
 import { Lock, Check } from 'lucide-react'
+import { ReactNode } from 'react'
 
 interface ThresholdBadgeProps {
   /** The rate this threshold unlocks (e.g., 0.5, 1.0) */
   rate: number
-  /** Label for the threshold (e.g., "20%", "40%") */
-  thresholdLabel: string
+  /** Label for the threshold (e.g., "20% of tuition<br/>spent") */
+  thresholdLabel: ReactNode
   /** Scroll progress value */
   progress?: MotionValue<number>
   /** Progress value at which this threshold unlocks */
@@ -44,7 +45,7 @@ export function ThresholdBadge({
   return (
     <div className={`flex flex-col items-center gap-2 ${className}`}>
       {/* Threshold label */}
-      <span className="text-xs text-muted-foreground font-medium">
+      <span className="text-xs text-muted-foreground font-medium text-center leading-tight">
         {thresholdLabel}
       </span>
 

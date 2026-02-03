@@ -55,25 +55,12 @@ export function ProgressGauge({
           />
         </div>
 
-        {/* Threshold markers on the bar */}
-        <div className="absolute top-0 left-0 w-full h-4 pointer-events-none">
-          {/* 20% marker line */}
-          <div
-            className="absolute top-0 h-full w-0.5 bg-foreground/30"
-            style={{ left: '25%' }} // 20% threshold at 25% visual position
-          />
-          {/* 40% marker line */}
-          <div
-            className="absolute top-0 h-full w-0.5 bg-foreground/30"
-            style={{ left: '50%' }} // 40% threshold at 50% visual position
-          />
-        </div>
       </div>
 
-      {/* Threshold badges below bar */}
-      <div className="relative mt-8 flex justify-between px-4">
+      {/* Threshold badges - positioned so midpoint aligns with bottom of OMNI label */}
+      <div className="relative mt-4 flex justify-between px-4">
         {/* 0% start */}
-        <div className="text-xs text-muted-foreground">
+        <div className="text-xs text-muted-foreground pt-1">
           0%
         </div>
 
@@ -81,7 +68,7 @@ export function ProgressGauge({
         <div className="absolute" style={{ left: '25%', transform: 'translateX(-50%)' }}>
           <ThresholdBadge
             rate={0.5}
-            thresholdLabel="20% of tuition spent"
+            thresholdLabel={<>20% of tuition<br />spent</>}
             progress={gaugeProgress}
             unlockAt={0.4} // Unlock at 40% of animation progress
           />
@@ -91,7 +78,7 @@ export function ProgressGauge({
         <div className="absolute" style={{ left: '50%', transform: 'translateX(-50%)' }}>
           <ThresholdBadge
             rate={1.0}
-            thresholdLabel="40% of tuition spent"
+            thresholdLabel={<>40% of tuition<br />spent</>}
             progress={gaugeProgress}
             unlockAt={0.8} // Unlock at 80% of animation progress
             isActive
