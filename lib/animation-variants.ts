@@ -44,6 +44,12 @@ export const cardTransition = {
   ease: 'easeOut' as const,
 }
 
+// Icon hover animation for feature cards
+export const iconHoverVariants = {
+  rest: { scale: 1, rotate: 0 },
+  hover: { scale: 1.1, rotate: -5 },
+}
+
 // === SCROLL REVEAL VARIANTS ===
 
 import type { Variants, Transition } from 'motion/react'
