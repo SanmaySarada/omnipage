@@ -5,16 +5,16 @@
 See: .planning/PROJECT.md
 
 **Core value:** Visitors immediately understand that Omni unlocks rewards on tuition without costing schools anything - and trust the page enough to join the waitlist.
-**Current focus:** Phase 7 v2 - How You Earn COMPLETE
+**Current focus:** Phase 7.2 - Design System Overhaul
 
 ## Current Position
 
 Phase: 7.2 of 10 (Design System Overhaul)
-Plan: 0 of 4 plans complete
-Status: Planned
-Last activity: 2026-02-02 - Deep research into fintech design standards, created 4-plan overhaul
+Plan: 3 of 4 plans complete
+Status: In Progress
+Last activity: 2026-02-03 - Completed 07.2-03 Color Palette Refinement
 
-Progress: [....................] 0% (07.2-01 through 07.2-04 pending)
+Progress: [===============.....] 75% (07.2-01, 07.2-02, 07.2-03 complete, 07.2-04 pending)
 
 **Note:** Phase 7.1 (Storyset illustrations) was attempted but SUPERSEDED. The Storyset illustrations contained cartoon characters and playful elements inappropriate for fintech. Phase 7.2 addresses this comprehensively.
 
@@ -53,6 +53,7 @@ Progress: [....................] 0% (07.2-01 through 07.2-04 pending)
 | 06-3d-card | 3/3 | 8min | 2.7min |
 | 07-how-it-works v1 | 4/4 | 7min | 1.75min |
 | 07-how-you-earn v2 | 5/5 | 27min | 5.4min |
+| 07.2-design-overhaul | 3/4 | 9min | 3min |
 
 ## Accumulated Context
 
@@ -119,6 +120,12 @@ Progress: [....................] 0% (07.2-01 through 07.2-04 pending)
 | 07-09 | Source stagger 0.05 | Creates cascade reveal effect |
 | 07-09 | Tuition card perspective | perspective(1000px) rotateY(-5deg) rotateX(5deg) |
 | 07-09 | Loop arc dasharray | 120 offset -> 30 draws 3/4 arc for cycle |
+| 07.2-03 | Primary saturation 0.16 | More refined, mature fintech aesthetic |
+| 07.2-03 | Primary lightness 0.45 | Deeper for sophistication, maintains contrast |
+| 07.2-03 | Hero gradient 3 stops | Simpler, cleaner, slower (30s) animation |
+| 07.2-02 | Geist display font | Premium typography hierarchy with Inter body |
+| 07.2-02 | font-display utility class | Apply to headlines and metric values |
+| 07.2-02 | Geist + Inter pairing | Fintech aesthetic (follows Bilt, Mercury pattern) |
 
 ### Pending Todos
 
@@ -131,5 +138,5 @@ Progress: [....................] 0% (07.2-01 through 07.2-04 pending)
 ## Session Continuity
 
 Last session: 2026-02-03
-Stopped at: Completed 07-09-PLAN.md (Phase 7 v2 complete)
-Resume file: None - ready for Phase 8 or future work
+Stopped at: Completed 07.2-03-PLAN.md (Color Palette Refinement)
+Resume file: None - ready for 07.2-04
